@@ -1,0 +1,222 @@
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\appsettings.Development.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\appsettings.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.staticwebassets.runtime.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.staticwebassets.endpoints.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.exe
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.deps.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.runtimeconfig.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\TechXpress E-commerce.pdb
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Azure.Core.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Azure.Identity.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Humanizer.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Identity.Client.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.ClientModel.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.CodeDom.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Drawing.Common.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Memory.Data.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Runtime.Caching.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Security.Permissions.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\System.Windows.Extensions.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.csproj.AssemblyReference.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.GeneratedMSBuildEditorConfig.editorconfig
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.AssemblyInfoInputs.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.AssemblyInfo.cs
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.csproj.CoreCompileInputs.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.MvcApplicationPartsAssemblyInfo.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.RazorAssemblyInfo.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.RazorAssemblyInfo.cs
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.sourcelink.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\bundle\TechXpress E-commerce.styles.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\projectbundle\TechXpress E-commerce.bundle.scp.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\395lpxp9cw-b9sayid5wm.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\mxfi8zod6e-61n19gt1b8.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\i1iwaney10-xtxxf3hu2r.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\243daqnzin-bqjiyaj88i.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\z3uj3axf71-c2jlpeoesf.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\3nqy5c41cw-erw9l3u2r3.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\rjhfnbnie5-aexeepp0ev.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\p45fol7noj-d7shbmvgxk.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\r2vqsd4x51-ausgxo2sd3.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\mbdqeu2u3w-k8d9w2qqmf.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\s1jztaxpg9-cosvhxvwiu.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\o732av00wz-ub07r2b239.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\eaa60kw1fj-fvhpjtyr6v.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\03qr5s6lax-b7pk76d08c.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\jsxh15k6sc-fsbi9cje9m.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\tkcf323aem-rzd6atqjts.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\lpp00csnmn-ee0r1s7dh0.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\gsmtxc50uh-dxx9fxp4il.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\mdbh48yc75-jd9uben2k1.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\wmswn6ousw-khv3u5hwcm.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ncrtvi4nza-r4e9w2rdcm.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\uvdtiy0box-lcd1t2u6c8.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\woz2i3obox-c2oey78nd0.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\n9x43jc91w-tdbxkamptv.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\kifnvgpm18-j5mq2jizvt.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ssgnyc4xbp-06098lyss8.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\kpyxrs0dnz-nvvlpmu67g.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ycmhjoxrf3-s35ty4nyc5.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\4tywae89pu-pj5nd1wqec.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\sd3q3hhb6s-46ein0sx1k.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\vo7qna9r12-v0zj4ognzu.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\vwi1e9dq5x-37tfw0ft22.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\s11h5ae4mu-hrwsygsryq.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ti4qzt4kx6-pk9g2wxc8p.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ba94ie9y0b-ft3s53vfgj.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\rzc37bj27d-6cfz1n2cew.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\gv5oz7cpbw-6pdc2jztkx.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ifz25e2ph6-493y06b0oq.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\o7fjberwu2-iovd86k7lj.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\xcbe7ga154-vr1egmr9el.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\9tsm92dtta-kbrnm935zg.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\9a6jx0xy73-jj8uyg4cgr.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\r5kpjolmo7-y7v9cxd14o.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\x37wt4hbfj-notf2xhcfb.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\izcdl87gs6-h1s4sie4z3.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\oxx866llyv-63fj8s7r0e.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\utlyvh8mox-0j3bgjxly4.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\rcz6ll4fp8-47otxtyo56.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\4mwp6bes5h-4v8eqarkd7.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\2q2imr3rfa-356vix0kms.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\4jknsrueia-83jwlth58m.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\w24sti0e33-mrlpezrjn3.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\82nmh734vm-lzl9nlhx6b.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\1fw6y5fp7s-ag7o75518u.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\xn4h47o4nk-x0q3zqp4vz.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ijzke960ee-0i3buxo5is.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\4cm1ut0wj9-o1o13a6vjx.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\crjr5ae04f-ttgo8qnofa.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\lhmlgh1pjo-2z0ns9nrw6.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\0mgnw2d7to-muycvpuwrr.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\wa7mocbjyb-87fc7y1x7t.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\c5ndb3j6qz-mlv21k5csn.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\m4uty71u98-nsrdqyaubz.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\ki9587s7pe-nsrdqyaubz.gz
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets.build.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets.development.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets\msbuild.TechXpress E-commerce.Microsoft.AspNetCore.StaticWebAssets.props
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets\msbuild.TechXpress E-commerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets\msbuild.build.TechXpress E-commerce.props
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TechXpress E-commerce.props
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TechXpress E-commerce.props
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets.pack.json
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpre.D84E9E7F.Up2Date
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\refint\TechXpress E-commerce.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.pdb
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.genruntimeconfig.cache
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\ref\TechXpress E-commerce.dll
