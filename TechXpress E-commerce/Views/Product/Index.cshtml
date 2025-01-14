@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>Product List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock Quantity</th>
+            <th>Images</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>@product.StockQuantity</td>
+                <td> 
+                    <img src="@product.ImageUrl" alt="@product.Name" style="width: 100px; height: auto; margin: 5px;" />
+                    
+                </td>
+                <td>@product.Category.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

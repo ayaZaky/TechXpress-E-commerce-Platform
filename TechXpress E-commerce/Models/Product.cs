@@ -29,13 +29,13 @@ namespace TechXpress_E_commerce.Models
         [StringLength(100, ErrorMessage = "Brand cannot exceed 100 characters")]
         public string? Brand { get; set; }
 
-        public List<string> ImageUrls { get; set; } = new();
+        public string? ImageUrl { get; set; }
 
         public  string? Specifications { get; set; }
  
         public bool IsAvailable { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } 
 
         //public bool IsFeatured { get; set; }
         public virtual Category Category { get; set; } = null!;

@@ -17,6 +17,7 @@ namespace TechXpress_E_commerce.Controllers
         public ActionResult Index()
         {
             var products = _context.Products.Include(p => p.Category).ToList();
+            
             return View(products);
         }
         [HttpGet]

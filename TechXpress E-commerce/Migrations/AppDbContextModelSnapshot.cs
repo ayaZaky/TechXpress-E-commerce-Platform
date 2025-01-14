@@ -339,8 +339,7 @@ namespace TechXpress_E_commerce.Migrations
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
 
-                    b.PrimitiveCollection<string>("ImageUrls")
-                        .IsRequired()
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsAvailable")

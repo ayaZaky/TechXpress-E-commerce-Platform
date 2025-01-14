@@ -12,8 +12,8 @@ using TechXpress_E_commerce.Models.AppDbContext;
 namespace TechXpress_E_commerce.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250112232203_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20250114181717_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -342,8 +342,7 @@ namespace TechXpress_E_commerce.Migrations
                         .HasMaxLength(2000)
                         .HasColumnType("nvarchar(2000)");
 
-                    b.PrimitiveCollection<string>("ImageUrls")
-                        .IsRequired()
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsAvailable")
