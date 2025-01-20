@@ -4,52 +4,44 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TechXpress_E_commerce.Models;
 using TechXpress_E_commerce.Models.AppDbContext;
+using TechXpress_E_commerce.Repositories;
 
 namespace TechXpress_E_commerce.Controllers
 {
     public class OrderController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly IRepository<Order> _orderRepository;
 
-        public OrderController(AppDbContext context)
+        public OrderController(IRepository<Order> orderRepository)
         {
-            _context = context;
+            _orderRepository = orderRepository;
         }
+
         public IActionResult Index()
         {
-            var orders = _context.Orders.Include(o => o.User).Include(o => o.OrderItems).Include(o => o.PaymentTransactions).ToList();
+            var orders = _orderRepository.GetAll()
+                                          .AsQueryable()
+                                          .Include(o => o.User)
+                                          .Include(o => o.OrderItems)
+                                          .Include(o => o.PaymentTransactions)
+                                          .ToList();
             return View(orders);
         }
-
-        // GET: Orders/Details/id
-        public IActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var order = _context.Orders
-                .Include(o => o.User)
-                .Include(o => o.OrderItems)
-                .Include(o => o.PaymentTransactions)
-                .FirstOrDefault(m => m.Id == id);
-
+         
+        public IActionResult Details(int id)
+        { 
+            var order = _orderRepository.GetById(id);
             if (order == null)
             {
                 return NotFound();
             }
 
             return View(order);
-        }
-
-        // GET: Orders/Create
+        } 
         public IActionResult Create()
         {
             return View();
-        }
-
-        // POST: Orders/Create
+        } 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Order order)
@@ -58,93 +50,61 @@ namespace TechXpress_E_commerce.Controllers
             {
                 order.CreatedAt = DateTime.Now;
                 order.UpdatedAt = DateTime.Now;
-                _context.Add(order);
-                _context.SaveChanges();
+                _orderRepository.Add(order);
+                _orderRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             return View(order);
-        }
+        } 
+        public IActionResult Edit(int id)
+        { 
 
-        // GET: Orders/Edit/5
-        public IActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var order = _context.Orders.Find(id);
+            var order = _orderRepository.GetById(id);
             if (order == null)
             {
                 return NotFound();
             }
             return View(order);
-        }
-        public IActionResult Edit(int id, Product product)
-        {
-            if (id != product.Id) return BadRequest();
-            if (ModelState.IsValid)
-            {
-                _context.Update(product);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
-            }  
-            return View(product);
-        }
-        // POST: Orders/Edit/5
+        } 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Order order)
         {
-            if (id != order.Id) return NotFound();
-
-            if (ModelState.IsValid)
-            {
-                  order.UpdatedAt = DateTime.Now;
-                  _context.Update(order);
-                  _context.SaveChanges(); 
-                  return RedirectToAction(nameof(Index));
-            }
-            return View(order);
-        }
-
-        // GET: Orders/Delete/5
-        public IActionResult Delete(int? id)
-        {
-            if (id == null)
+            if (id != order.Id)
             {
                 return NotFound();
             }
 
-            var order = _context.Orders
-                .Include(o => o.User)
-                .FirstOrDefault(m => m.Id == id);
+            if (ModelState.IsValid)
+            {
+                order.UpdatedAt = DateTime.Now;
+                _orderRepository.Update(order);
+                _orderRepository.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(order);
+        } 
+        public IActionResult Delete(int id)
+        {  
+            var order = _orderRepository.GetById(id);
             if (order == null)
             {
                 return NotFound();
             }
 
             return View(order);
-        }
-
-        // POST: Orders/Delete/5
+        } 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            var order = _context.Orders.Find(id);
+            var order = _orderRepository.GetById(id);
             if (order != null)
             {
-                _context.Orders.Remove(order);
-                _context.SaveChanges();
+                _orderRepository.Delete(order);
+                _orderRepository.SaveChanges();
             }
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool OrderExists(int id)
-        {
-            return _context.Orders.Any(e => e.Id == id);
-        }
-         
+        }  
     }
 }

@@ -2,25 +2,26 @@
 using TechXpress_E_commerce.Models.AppDbContext;
 using TechXpress_E_commerce.Models;
 using Microsoft.EntityFrameworkCore;
+using TechXpress_E_commerce.Repositories;
 
 namespace TechXpress_E_commerce.Controllers
 {
     public class OrderItemController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly IRepository<OrderItem> _orderItemRepository;
 
-        public OrderItemController(AppDbContext context)
+        public OrderItemController(IRepository<OrderItem> orderItemRepository)
         {
-            _context = context;
+            _orderItemRepository = orderItemRepository;
         }
 
         // Get all order items
         public IActionResult Index()
         {
-            var orderItems = _context.OrderItems
-                                     .Include(oi => oi.Order)
-                                     .Include(oi => oi.Product)
-                                     .ToList();
+            var orderItems = _orderItemRepository.GetAll().AsQueryable()
+                                                 .Include(oi => oi.Order)
+                                                 .Include(oi => oi.Product)
+                                                 .ToList();
             return View(orderItems);
         }
 
@@ -28,11 +29,7 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var orderItem = _context.OrderItems
-                                     .Include(oi => oi.Order)
-                                     .Include(oi => oi.Product)
-                                     .FirstOrDefault(oi => oi.Id == id);
-
+            var orderItem = _orderItemRepository.GetById(id);
             if (orderItem == null)
                 return NotFound();
 
@@ -42,7 +39,7 @@ namespace TechXpress_E_commerce.Controllers
         // Create
         [HttpGet]
         public IActionResult Create()
-        { 
+        {
             return View();
         }
 
@@ -51,10 +48,10 @@ namespace TechXpress_E_commerce.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.OrderItems.Add(orderItem);
-                _context.SaveChanges();
+                _orderItemRepository.Add(orderItem);
+                _orderItemRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
-            } 
+            }
             return View(orderItem);
         }
 
@@ -62,9 +59,9 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var orderItem = _context.OrderItems.Find(id);
+            var orderItem = _orderItemRepository.GetById(id);
             if (orderItem == null)
-                return NotFound(); 
+                return NotFound();
             return View(orderItem);
         }
 
@@ -76,10 +73,10 @@ namespace TechXpress_E_commerce.Controllers
 
             if (ModelState.IsValid)
             {
-                _context.Update(orderItem);
-                _context.SaveChanges();
+                _orderItemRepository.Update(orderItem);
+                _orderItemRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
-            } 
+            }
             return View(orderItem);
         }
 
@@ -87,10 +84,7 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var orderItem = _context.OrderItems
-                                     .Include(oi => oi.Order)
-                                     .Include(oi => oi.Product)
-                                     .FirstOrDefault(oi => oi.Id == id);
+            var orderItem = _orderItemRepository.GetById(id);
             if (orderItem == null)
                 return NotFound();
 
@@ -100,12 +94,12 @@ namespace TechXpress_E_commerce.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            var orderItem = _context.OrderItems.Find(id);
+            var orderItem = _orderItemRepository.GetById(id);
             if (orderItem == null)
                 return NotFound();
 
-            _context.OrderItems.Remove(orderItem);
-            _context.SaveChanges();
+            _orderItemRepository.Delete(orderItem);
+            _orderItemRepository.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
     }

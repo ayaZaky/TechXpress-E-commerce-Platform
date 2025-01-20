@@ -1,80 +1,78 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TechXpress_E_commerce.Models;
 using TechXpress_E_commerce.Models.AppDbContext;
+using TechXpress_E_commerce.Repositories;
 
 namespace TechXpress_E_commerce.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly IRepository<Category> _categoryRepository;
 
-        public CategoryController(AppDbContext context)
+        public CategoryController(IRepository<Category> categoryRepository)
         {
-            _context = context;
-        }
-
-        public ActionResult Index()
+            _categoryRepository = categoryRepository;
+        } 
+        public IActionResult Index()
         {
-            var categories = _context.Categories.ToList();
+            var categories = _categoryRepository.GetAll();  
             return View(categories);
-        }
-        public ActionResult Details(int id)
-        {
-            var category = _context.Categories.Find(id);
-            if (category == null) return NotFound();
-            return View(category);
-        }
-        [HttpGet]
+        } 
         public IActionResult Create()
         {
             return View();
-        }
+        } 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Category category)
         {
             if (ModelState.IsValid)
             {
-                _context.Categories.Add(category);
-                _context.SaveChanges();
+                _categoryRepository.Add(category);  
+                _categoryRepository.SaveChanges(); 
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
-        }
-
+        } 
         public IActionResult Edit(int id)
         {
-            var category = _context.Categories.Find(id);
-            if (category == null) return NotFound();
-            return View(category);
-        }
-
-        [HttpPost]
-        public IActionResult Edit(int id, Category category)
-        {
-            if (id != category.Id) return BadRequest();
-            if (ModelState.IsValid)
+            var category = _categoryRepository.GetById(id);  
+            if (category == null)
             {
-                _context.Update(category);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
             return View(category);
         }
+         
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Category category)
+        {
+            if (id != category.Id)
+            {
+                return NotFound();
+            }
 
-
+            if (ModelState.IsValid)
+            {
+                _categoryRepository.Update(category); 
+                _categoryRepository.SaveChanges();  
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }  
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(int id)
         {
-            var category = _context.Categories.Find(id);
-            if (category == null) return NotFound();
-            return View(category);
-        }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var category = _context.Categories.Find(id);
-            if (category == null) return NotFound();
-            _context.Categories.Remove(category);
-            _context.SaveChanges();
+            var category = _categoryRepository.GetById(id);  
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            _categoryRepository.Delete(category); 
+            _categoryRepository.SaveChanges(); 
             return RedirectToAction(nameof(Index));
         }
     }

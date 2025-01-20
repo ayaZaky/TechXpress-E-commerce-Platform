@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SPWQ4BGuFGWIvxQFEgZe/VFUp8pQUKxbYBPmXRgpU7o=",
+  "Hash": "JdX/AGA6cB+KUNBCL91EjMJvv4/wtHUe1PJIK9nFihc=",
   "Source": "TechXpress E-commerce",
   "BasePath": "_content/TechXpress E-commerce",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-b9sayid5wm.gz",
+      "Identity": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-jemf1evng9.gz",
       "SourceId": "TechXpress E-commerce",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/TechXpress E-commerce",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=jemf1evng9}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "0xy7h7gicd",
+      "Integrity": "hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "jemf1evng9",
+      "Integrity": "1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-b9sayid5wm.gz",
+      "Route": "css/site.css",
+      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-jemf1evng9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.000668896321"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "1494"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,26 +2772,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "b9sayid5wm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.css",
       "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "5675"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2801,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-jemf1evng9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1494"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.jemf1evng9.css",
+      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-jemf1evng9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000668896321"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1494"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jemf1evng9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.jemf1evng9.css",
+      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5675"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "jemf1evng9"
         },
         {
           "Name": "label",
@@ -2831,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-1Zf3icNNu/jt0m4EpFoHfQX5YnbwtE8L/J4ib3g4pSA="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-b9sayid5wm.gz",
+      "Route": "css/site.jemf1evng9.css.gz",
+      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-jemf1evng9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "1494"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
+          "Value": "Fri, 17 Jan 2025 13:03:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "jemf1evng9"
         },
         {
           "Name": "label",
@@ -2884,144 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003125000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "319"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\obj\\Debug\\net9.0\\compressed\\395lpxp9cw-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "319"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:07:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-hFmFBFWtoLRbb1FdNmOaWc6aKvEW/Eesu+m8Vkq+kU8="
         }
       ]
     },

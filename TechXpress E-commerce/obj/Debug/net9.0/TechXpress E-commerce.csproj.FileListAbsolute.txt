@@ -140,7 +140,6 @@ D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\ob
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\bundle\TechXpress E-commerce.styles.css
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\scopedcss\projectbundle\TechXpress E-commerce.bundle.scp.css
-D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\395lpxp9cw-b9sayid5wm.gz
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\mxfi8zod6e-61n19gt1b8.gz
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\i1iwaney10-xtxxf3hu2r.gz
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\243daqnzin-bqjiyaj88i.gz
@@ -220,3 +219,4 @@ D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\ob
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.pdb
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\TechXpress E-commerce.genruntimeconfig.cache
 D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\ref\TechXpress E-commerce.dll
+D:\TechXpress E-commerce Platform\TechXpress E-commerce\TechXpress E-commerce\obj\Debug\net9.0\compressed\395lpxp9cw-jemf1evng9.gz

@@ -3,8 +3,75 @@
   "WorkspaceRootPath": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Migrations\\20250114181717_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TechXpress E-commerce\\Migrations\\20250114181717_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\cartitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aya M Zaki\\Downloads\\Day 20\\DemoForMvc\\DemoForMvc\\Views\\Category\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\migrations\\20250114181717_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\migrations\\20250114181717_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +81,226 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartItemController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\CartItemController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\CartItemController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\CartItemController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\CartItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:43:04.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddressController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\AddressController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\AddressController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\AddressController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\AddressController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:43:02.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAApwCsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:56:00.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TechXpress E-commerce\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-17T12:14:57.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAwwIMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T11:58:37.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAApwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T19:32:07.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrderItemController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\OrderItemController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\OrderItemController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\OrderItemController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\OrderItemController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:17:06.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:56:02.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T13:08:37.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T19:31:11.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T18:54:24.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T15:57:15.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T15:55:11.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aya M Zaki\\Downloads\\Day 20\\DemoForMvc\\DemoForMvc\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Aya M Zaki\\Downloads\\Day 20\\DemoForMvc\\DemoForMvc\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwB4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T11:56:46.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "TechXpress E-commerce\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:55:57.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T18:54:09.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T18:54:04.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "20250114181717_initial.cs",
               "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Migrations\\20250114181717_initial.cs",
               "RelativeDocumentMoniker": "TechXpress E-commerce\\Migrations\\20250114181717_initial.cs",
               "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Migrations\\20250114181717_initial.cs",
               "RelativeToolTip": "TechXpress E-commerce\\Migrations\\20250114181717_initial.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAIAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T18:17:17.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T18:17:17.252Z"
             }
           ]
         }
