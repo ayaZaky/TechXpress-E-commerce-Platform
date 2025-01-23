@@ -93,18 +93,20 @@ namespace TechXpress_E_commerce.Controllers
             }
 
             return View(order);
-        } 
+        }  
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
             var order = _orderRepository.GetById(id);
-            if (order != null)
+            if (order == null)
             {
-                _orderRepository.Delete(order);
-                _orderRepository.SaveChanges();
+                return NotFound();  
             }
+
+            _orderRepository.Delete(order);
+            _orderRepository.SaveChanges();
             return RedirectToAction(nameof(Index));
-        }  
+        }
     }
 }
