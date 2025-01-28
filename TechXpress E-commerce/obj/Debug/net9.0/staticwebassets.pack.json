@@ -5,16 +5,164 @@
       "PackagePath": "staticwebassets\\TechXpress E-commerce.nsrdqyaubz.bundle.scp.css"
     },
     {
-      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\LineIcons.3.0.css",
+      "PackagePath": "staticwebassets\\css\\LineIcons.3.0.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\css\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\css\\tiny-slider.css"
     },
     {
       "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\fonts\\LineIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.eot"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\fonts\\LineIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\fonts\\LineIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.ttf"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\fonts\\LineIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\fonts\\LineIcons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff2"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\banner\\banner-1-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-1-bg.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\banner\\banner-2-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-2-bg.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\images\\favicon.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\footer\\credit-cards-footer.png",
+      "PackagePath": "staticwebassets\\images\\footer\\credit-cards-footer.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\header\\cart-items\\item1.jpg",
+      "PackagePath": "staticwebassets\\images\\header\\cart-items\\item1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\header\\cart-items\\item2.jpg",
+      "PackagePath": "staticwebassets\\images\\header\\cart-items\\item2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\hero\\slider-bg1.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bg1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\hero\\slider-bg2.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bg2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\hero\\slider-bnr.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bnr.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\hero\\small-banner-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero\\small-banner-bg.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\white-logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\white-logo.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\product-details\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\01.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\product-details\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\02.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\product-details\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\03.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\product-details\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\04.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\product-details\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\05.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-3.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\products\\product-8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-8.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\js\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\js\\tiny-slider.js"
     },
     {
       "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\lib\\bootstrap\\LICENSE",

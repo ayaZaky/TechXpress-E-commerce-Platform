@@ -25,9 +25,11 @@
                 <td>@product.Description</td>
                 <td>@product.Price</td>
                 <td>@product.StockQuantity</td>
-                <td> 
-                    <img src="@product.ImageUrl" alt="@product.Name" style="width: 100px; height: auto; margin: 5px;" />
-                    
+                <td>
+                    @foreach (var image in product.Images)
+                    {
+                        <img src="@image.ImageUrl" alt="@product.Name" style="width: 100px; height: auto; margin: 5px;" />
+                    }
                 </td>
                 <td>@product.Category.Name</td>
             </tr>

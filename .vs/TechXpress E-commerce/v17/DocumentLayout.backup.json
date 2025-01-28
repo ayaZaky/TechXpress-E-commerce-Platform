@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|d:\\techxpress e-commerce platform\\techxpress e-commerce\\techxpress e-commerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{72B95ADE-B685-4FFF-8F29-272C81AE2CC4}|TechXpress E-commerce\\TechXpress E-commerce.csproj|solutionrelative:techxpress e-commerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T15:13:31.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projects\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\Projects\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projects\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\Projects\\TechXpress E-commerce\\TechXpress E-commerce\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAswEoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T15:08:35.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

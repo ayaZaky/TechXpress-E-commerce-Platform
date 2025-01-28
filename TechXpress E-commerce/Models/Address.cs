@@ -9,7 +9,7 @@ namespace TechXpress_E_commerce.Models
             public int Id { get; set; }
 
             [Required]
-            public int UserId { get; set; }
+            public string UserId { get; set; }
             [Required(ErrorMessage = "Address Type is required")]
             [Display(Name = "Address Type")]
             public string AddressType { get; set; }= null!; // "billing" or "shipping"
@@ -33,7 +33,7 @@ namespace TechXpress_E_commerce.Models
             [Required(ErrorMessage = "Country is required")]
             [StringLength(50, ErrorMessage = "Country cannot exceed 50 characters")]
             public string Country { get; set; } = null!;
-            public virtual User User { get; set; } = null!;
+            public virtual ApplicationUser User { get; set; } = null!;
 
         
     }

@@ -9,7 +9,7 @@ namespace TechXpress_E_commerce.Models
         public int Id { get; set; }  
 
         [Required(ErrorMessage = "User ID is required")]
-        public int UserId { get; set; }  
+        public string UserId { get; set; }  
 
         [Required(ErrorMessage = "Provider is required")]
         [StringLength(50, ErrorMessage = "Provider cannot exceed 50 characters")]
@@ -41,7 +41,7 @@ namespace TechXpress_E_commerce.Models
         public DateTime? UpdatedAt { get; set; }   
 
         // Navigation properties
-        public virtual User User { get; set; } = null!;
+        public virtual ApplicationUser User { get; set; } = null!;
         public virtual ICollection<PaymentTransaction> PaymentTransactions { get; set;}
         public virtual ICollection<Refund> Refunds { get; set; }  
     }

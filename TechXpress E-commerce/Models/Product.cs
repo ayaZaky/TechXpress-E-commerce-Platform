@@ -28,16 +28,16 @@ namespace TechXpress_E_commerce.Models
 
         [StringLength(100, ErrorMessage = "Brand cannot exceed 100 characters")]
         public string? Brand { get; set; }
+        public virtual ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
 
-        public string? ImageUrl { get; set; }
-
-        public  string? Specifications { get; set; }
- 
+        // Add Rating property (assuming a scale of 1 to 5)
+        [Range(1, 5, ErrorMessage = "Rating must be between 1 and 5")]
+        public double Rating { get; set; } 
+        public string? Specifications { get; set; } 
         public bool IsAvailable { get; set; }
-
-        public DateTime CreatedAt { get; set; } 
-
-        //public bool IsFeatured { get; set; }
+        public bool IsFeatured { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }  
         public virtual Category Category { get; set; } = null!;
         public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
         public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();

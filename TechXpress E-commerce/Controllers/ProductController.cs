@@ -10,19 +10,24 @@ namespace TechXpress_E_commerce.Controllers
     {
         private readonly IRepository<Product> _p_repository;
         private readonly IRepository<Category> _c_repository;
+        private readonly IProductRepository _productRepository;
 
-        public ProductController(IRepository<Product> p_repository , IRepository<Category> c_repository)
+        public ProductController(IRepository<Product> p_repository , IRepository<Category> c_repository,IProductRepository productRepository)
         {
             _p_repository = p_repository;
             _c_repository = c_repository;
+            _productRepository = productRepository;
+
+
         }
         // Get all products
-        public ActionResult Index()
+        // GET: Product
+        public async Task<IActionResult> Index()
         {
-            var products = _p_repository.GetAll();  
-            
+            var products = await _productRepository.GetAllProductsWithImagesAndCategoriesAsync();
             return View(products);
         }
+        
         [HttpGet]
         // Get product by ID
         public IActionResult Details(int id)

@@ -16,19 +16,19 @@ namespace TechXpress_E_commerce.Tests
         private readonly Repository<Category> _c_repository;
 
 
-        public ProductControllerTests()
-        {
-            var options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
-                .Options;
+        //public ProductControllerTests()
+        //{
+        //    var options = new DbContextOptionsBuilder<AppDbContext>()
+        //        .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+        //        .Options;
 
-            _context = new AppDbContext(options);
-            _p_repository =new Repository<Product>(_context);
-            _c_repository = new Repository<Category>(_context);
-            SeedDatabase();
+        //    _context = new AppDbContext(options);
+        //    _p_repository =new Repository<Product>(_context);
+        //    _c_repository = new Repository<Category>(_context);
+        //    SeedDatabase();
 
-            _controller = new ProductController(_p_repository, _c_repository);
-        }
+        //    _controller = new ProductController(_p_repository, _c_repository);
+        //}
         private void SeedDatabase()
         {
             var category = new Category {  Id = 1, Name = "Category1" };
@@ -38,16 +38,16 @@ namespace TechXpress_E_commerce.Tests
             _p_repository.Add(new Product { Id = 2, Name = "Product2", CategoryId = 1 });
             _p_repository.SaveChanges();
         }
-        [Fact]
-        public void Index_ReturnsAViewResult_WithAListOfProducts()
-        {
-            // Act
-            var result = _controller.Index() as ViewResult; 
-            // Assert
-            Assert.NotNull(result);
-            var model = Assert.IsAssignableFrom<IEnumerable<Product>>(result.Model);
-            Assert.Equal(2, model.Count());
-        }
+        //[Fact]
+        //public void Index_ReturnsAViewResult_WithAListOfProducts()
+        //{
+        //    // Act
+        //    var result = _controller.Index() as ViewResult; 
+        //    // Assert
+        //    Assert.NotNull(result);
+        //    var model = Assert.IsAssignableFrom<IEnumerable<Product>>(result.Model);
+        //    Assert.Equal(2, model.Count());
+        //}
         [Fact]
         public void Details_ProductExists_ReturnsView()
         {

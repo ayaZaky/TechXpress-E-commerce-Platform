@@ -10,7 +10,7 @@ namespace TechXpress_E_commerce.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "User ID is required")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public OrderStatus OrderStatus { get; set; }
         public PaymentStatus PaymentStatus { get; set; }
@@ -43,7 +43,7 @@ namespace TechXpress_E_commerce.Models
         public DateTime UpdatedAt { get; set; } 
 
         // Navigation properties
-        public virtual User User { get; set; } = null!;
+        public virtual ApplicationUser User { get; set; } = null!;
         public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
         public virtual ICollection<PaymentTransaction> PaymentTransactions { get; set; } = new List<PaymentTransaction>();
 

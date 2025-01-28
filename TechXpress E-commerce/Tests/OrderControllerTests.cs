@@ -32,7 +32,7 @@ namespace TechXpress_E_commerce.Tests
             _orderRepository.Add(new Order
             {
                 Id = 1,
-                UserId = 1,
+                UserId = "1",
                 Subtotal = 50,
                 Tax = 10,
                 ShippingFee = 5,
@@ -45,7 +45,7 @@ namespace TechXpress_E_commerce.Tests
             _orderRepository.Add(new Order
             {
                 Id = 2,
-                UserId = 2,
+                UserId = "2",
                 Subtotal = 150,
                 Tax = 30,
                 ShippingFee = 10,
@@ -114,7 +114,7 @@ namespace TechXpress_E_commerce.Tests
             // Arrange
             var order = new Order
             {
-                UserId = 3,
+                UserId = "3",
                 Subtotal = 200,
                 Tax = 40,
                 ShippingFee = 15,

@@ -9,9 +9,9 @@ namespace TechXpress_E_commerce.Controllers
     public class AddressController : Controller
     {
         private readonly IRepository<Address> _addressRepository;
-        private readonly IRepository<User> _userRepository;
+        private readonly IRepository<ApplicationUser> _userRepository;
 
-        public AddressController(IRepository<Address> addressRepository, IRepository<User> userRepository)
+        public AddressController(IRepository<Address> addressRepository, IRepository<ApplicationUser> userRepository)
         {
             _addressRepository = addressRepository;
             _userRepository = userRepository;

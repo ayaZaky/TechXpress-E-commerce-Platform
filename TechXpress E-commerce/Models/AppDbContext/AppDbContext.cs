@@ -1,16 +1,16 @@
 ﻿using System.Reflection.Emit;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using static TechXpress_E_commerce.Models.Address;
 
 namespace TechXpress_E_commerce.Models.AppDbContext
 {
-    public class AppDbContext: DbContext
+    public class AppDbContext: IdentityDbContext<ApplicationUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { } // Chaining Constructor
-
-        public DbSet<User> Users { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
@@ -29,6 +29,12 @@ namespace TechXpress_E_commerce.Models.AppDbContext
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.Restrict);
+            // ProductImages - Product (Many-to-One)
+            builder.Entity<Product>()
+               .HasMany(p => p.Images)
+               .WithOne(pi => pi.Product)
+               .HasForeignKey(pi => pi.ProductId)
+               .OnDelete(DeleteBehavior.Cascade);
             // OrderItem - Order (Many-to-One)
             builder.Entity<OrderItem>()
                 .HasOne(oi => oi.Order)

@@ -13,7 +13,7 @@ namespace TechXpress_E_commerce.Tests
         private readonly AddressController _controller;
         private readonly AppDbContext _context;
         private readonly Repository<Address> _addressRepository;
-        private readonly Repository<User> _userRepository;
+        private readonly Repository<ApplicationUser> _userRepository;
 
         public AddressControllerTests()
         {
@@ -23,7 +23,7 @@ namespace TechXpress_E_commerce.Tests
 
             _context = new AppDbContext(options);
             _addressRepository = new Repository<Address>(_context);
-            _userRepository = new Repository<User>(_context);
+            _userRepository = new Repository<ApplicationUser>(_context);
             SeedDatabase();
 
             _controller = new AddressController(_addressRepository, _userRepository);
@@ -32,13 +32,13 @@ namespace TechXpress_E_commerce.Tests
      private void SeedDatabase()
 {
     // Add a User with all required properties
-    var user = new User
+    var user = new ApplicationUser
     {
-        Id = 1,
+         Id = "1",
          FirstName = "User1",
         LastName = "Smith",
         Email = "user1@example.com",
-        Password = "password123"
+        PasswordHash = "password123"
     };
     _userRepository.Add(user);
     _userRepository.SaveChanges(); 
@@ -52,7 +52,7 @@ namespace TechXpress_E_commerce.Tests
         State = "State1",      
         Country = "Country1",  
         PostalCode = "12345", 
-        UserId = 1
+        UserId = "1"
     });
     _addressRepository.Add(new Address
     {
@@ -63,7 +63,7 @@ namespace TechXpress_E_commerce.Tests
         State = "State2",      
         Country = "Country2",  
         PostalCode = "67890",  
-        UserId = 1
+        UserId = "1"
     });
     _addressRepository.SaveChanges();
 }
@@ -131,7 +131,7 @@ namespace TechXpress_E_commerce.Tests
                 State = "State3",          
                 Country = "Country3",    
                 PostalCode = "54321",     
-                UserId = 1               
+                UserId = "1"              
             };
 
             // Act
