@@ -12,41 +12,45 @@ namespace TechXpress_E_commerce.Controllers
         public CategoryController(IRepository<Category> categoryRepository)
         {
             _categoryRepository = categoryRepository;
-        } 
-        public IActionResult Index()
+        }
+
+        public async Task<IActionResult> Index()
         {
-            var categories = _categoryRepository.GetAll();  
+            var categories = await _categoryRepository.GetAllAsync(); 
             return View(categories);
-        } 
+        }
+
         public IActionResult Create()
         {
             return View();
-        } 
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public async Task<IActionResult> Create(Category category)
         {
             if (ModelState.IsValid)
             {
-                _categoryRepository.Add(category);  
-                _categoryRepository.SaveChanges(); 
+                await _categoryRepository.AddAsync(category);
+                await _categoryRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
-        } 
-        public IActionResult Edit(int id)
+        }
+
+        public async Task<IActionResult> Edit(int id)
         {
-            var category = _categoryRepository.GetById(id);  
+            var category = await _categoryRepository.GetByIdAsync(id);
             if (category == null)
             {
                 return NotFound();
             }
             return View(category);
         }
-         
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Category category)
+        public async Task<IActionResult> Edit(int id, Category category)
         {
             if (id != category.Id)
             {
@@ -55,24 +59,25 @@ namespace TechXpress_E_commerce.Controllers
 
             if (ModelState.IsValid)
             {
-                _categoryRepository.Update(category); 
-                _categoryRepository.SaveChanges();  
+                _categoryRepository.Update(category);
+                await _categoryRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
-        }  
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var category = _categoryRepository.GetById(id);  
+            var category = await _categoryRepository.GetByIdAsync(id);
             if (category == null)
             {
                 return NotFound();
             }
 
-            _categoryRepository.Delete(category); 
-            _categoryRepository.SaveChanges(); 
+            _categoryRepository.Remove(category);
+            await _categoryRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
     }

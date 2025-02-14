@@ -3,103 +3,82 @@ using TechXpress_E_commerce.Models.AppDbContext;
 using TechXpress_E_commerce.Models;
 using Microsoft.EntityFrameworkCore;
 using TechXpress_E_commerce.Repositories;
+using System.Security.Claims;
 
 namespace TechXpress_E_commerce.Controllers
 {
     public class CartItemController : Controller
     {
-        private readonly IRepository<CartItem> _cartItemRepository;
+        private readonly ICartItemRepository _cartItemRepository;
+        private readonly IRepository<Product> _productRepository;
 
-        public CartItemController(IRepository<CartItem> cartItemRepository)
+        public CartItemController(ICartItemRepository cartItemRepository, IRepository<Product> productRepository)
         {
             _cartItemRepository = cartItemRepository;
+            _productRepository = productRepository;
         }
 
-        // Get all cart items
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var cartItems = _cartItemRepository.GetAll()
-                                                  .AsQueryable()
-                                               .Include(ci => ci.User)
-                                               .Include(ci => ci.Product)
-                                               .ToList();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var cartItems = await _cartItemRepository.GetCartItemsAsync(userId);
             return View(cartItems);
         }
-         
-        [HttpGet]
-        public IActionResult Details(int id)
-        {
-            var cartItem = _cartItemRepository.GetById(id);
-            if (cartItem == null)
-                return NotFound();
-
-            return View(cartItem);
-        }
-         
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        } 
 
         [HttpPost]
-        public IActionResult Create(CartItem cartItem)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddToCart(int productId, int quantity)
         {
-            if (ModelState.IsValid)
+            if (!User.Identity.IsAuthenticated)
             {
-                cartItem.CreatedAt = DateTime.Now;  
-                _cartItemRepository.Add(cartItem);
-                _cartItemRepository.SaveChanges(); 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Login", "Account"); // إعادة التوجيه لصفحة تسجيل الدخول
             }
-            return View(cartItem);
-        } 
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var cartItem = _cartItemRepository.GetById(id);
-            if (cartItem == null)
+            var product = await _productRepository.GetByIdAsync(productId);
+            if (product == null)
+            {
                 return NotFound();
+            }
 
-            return View(cartItem);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Add or update the cart item
+            var cartItem = await _cartItemRepository.UpdateOrAddToCartAsync(productId, userId, quantity);
+
+            // Get updated cart count and save it in TempData
+            var cartCount = await _cartItemRepository.GetCartItemCountAsync(userId);
+            TempData["CartCount"] = cartCount;
+
+            return RedirectToAction("Index", "Home");
         }
- 
+
         [HttpPost]
-        public IActionResult Edit(int id, CartItem cartItem)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RemoveFromCart(int id)
         {
-            if (id != cartItem.Id)
-                return BadRequest();
-
-            if (ModelState.IsValid)
-            {
-                _cartItemRepository.Update(cartItem);
-                _cartItemRepository.SaveChanges(); 
-                return RedirectToAction(nameof(Index));
-            }
-            return View(cartItem);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            await _cartItemRepository.RemoveFromCartAsync(id, userId);
+            return RedirectToAction("Index", "CartItem");
+           
         }
-         
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var cartItem = _cartItemRepository.GetById(id);
-            if (cartItem == null)
-                return NotFound();
+        
 
-            return View(cartItem);
-        } 
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateQuantity(int id, int quantity)
         {
-            var cartItem = _cartItemRepository.GetById(id);
-            if (cartItem == null)
-                return NotFound();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var cartItem = await _cartItemRepository.GetCartItemAsync(userId, id);
 
-            _cartItemRepository.Delete(cartItem);
-            _cartItemRepository.SaveChanges();  
+            if (cartItem != null && quantity > 0)
+            {
+                await _cartItemRepository.UpdateQuantityAsync(id, userId, quantity);
+            }
+
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult Checkout()
+        {
+            return View();
+        }
     }
-
 }
-

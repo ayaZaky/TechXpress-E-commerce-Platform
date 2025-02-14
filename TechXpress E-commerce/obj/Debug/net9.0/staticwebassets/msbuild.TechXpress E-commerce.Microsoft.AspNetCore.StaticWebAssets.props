@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xd6an3a5od</Fingerprint>
-      <Integrity>1YHOES7loQ0wdbaejIUHJpIu9xixInV9IHy3zjg0unI=</Integrity>
+      <Fingerprint>h9z8pedepz</Fingerprint>
+      <Integrity>hWUc8MRBF596EG2oq8ylDol4a/pdC6Apnhb70V+GQo8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\main.css'))</OriginalItemSpec>
@@ -390,11 +390,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1dxhv63nqr</Fingerprint>
-      <Integrity>JQpCO5kfHMIsze6Zs8x+gzXlRr9U6c6q1M1wk1txI9E=</Integrity>
+      <Fingerprint>lqibt5g0tw</Fingerprint>
+      <Integrity>Y1sNfLcKCAq0mSZTHTcZFm+1pvuXiHzXCwITnFFD/Vc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\logo.svg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\User.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechXpress E-commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechXpress E-commerce</BasePath>
+      <RelativePath>images/logo/User.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4oxfdj3pc9</Fingerprint>
+      <Integrity>zN57JEx1rYjXaAV3/xhvu6OteM7JN+qaX9Rn8/KMCd0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\User.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\user_1.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>TechXpress E-commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TechXpress E-commerce</BasePath>
+      <RelativePath>images/logo/user_1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>iodv0daxv5</Fingerprint>
+      <Integrity>Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\user_1.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo\white-logo.svg'))">
       <SourceType>Package</SourceType>
@@ -696,8 +732,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zf0sflmxp2</Fingerprint>
-      <Integrity>P3Tm/3lSC3FnfM87R5EFZFv82IdI/Sc0hbSJf5DqAo0=</Integrity>
+      <Fingerprint>dvpfooo5df</Fingerprint>
+      <Integrity>uWh7ftXoUoo0G/0FoV4SG1dI8RgbQqc0YHsUp6Gw4zI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\main.js'))</OriginalItemSpec>

@@ -12,14 +12,13 @@ namespace TechXpress_E_commerce.Controllers
         private readonly IRepository<Category> _c_repository;
         private readonly IProductRepository _productRepository;
 
-        public ProductController(IRepository<Product> p_repository , IRepository<Category> c_repository,IProductRepository productRepository)
+        public ProductController(IRepository<Product> p_repository, IRepository<Category> c_repository, IProductRepository productRepository)
         {
             _p_repository = p_repository;
             _c_repository = c_repository;
             _productRepository = productRepository;
-
-
         }
+
         // Get all products
         // GET: Product
         public async Task<IActionResult> Index()
@@ -27,91 +26,103 @@ namespace TechXpress_E_commerce.Controllers
             var products = await _productRepository.GetAllProductsWithImagesAndCategoriesAsync();
             return View(products);
         }
-        
+
         [HttpGet]
         // Get product by ID
-        public IActionResult Details(int id)
+        public async Task<IActionResult>Details(int id)
         {
-            var product =  _p_repository.GetById(id);
+            var product = await _productRepository.GetProductWithDetailsAsync(id);
             if (product == null)
-                return NotFound();
+            { return NotFound();
+            }    
             return View(product);
         }
+      
+
         // Get products by category id
         [HttpGet]
-        public IActionResult GetProductsByCategoryId(int categoryId)
+
+        public async Task<IActionResult> GetProductsByCategoryId(int categoryId)
         {
-            var products = _p_repository.GetAll()
-                                 .AsQueryable()  
-                                .Include(p => p.Category)  
-                                .Where(p => p.CategoryId == categoryId)
-                                .ToList();  
-
-            if (!products.Any())
+            var products = await _p_repository.GetByIdAsync(categoryId);
+            if (products == null)
                 return NotFound();
-
             return View(products);
+            
         }
-
 
         // Create
         [HttpGet]
         public IActionResult Create()
-        { 
-            ViewBag.Categories = _c_repository.GetAll(); ;
+        {
+            ViewBag.Categories = _c_repository.GetAllAsync();
             return View();
         }
+
         [HttpPost]
-        public IActionResult Create(Product product)
+        public async Task<IActionResult> Create(Product product)
         {
             if (ModelState.IsValid)
             {
-                _p_repository.Add(product) ;
-                _p_repository.SaveChanges();
+                await _p_repository.AddAsync(product);
+                await _p_repository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.Categories = _c_repository.GetAll(); 
+            ViewBag.Categories = _c_repository.GetAllAsync();
             return View(product);
         }
 
-        //Edit
-        public IActionResult Edit(int id)
+        // Edit
+        public async Task<IActionResult> Edit(int id)
         {
-            var product = _p_repository.GetById(id);
+            var product = await _p_repository.GetByIdAsync(id);
             if (product == null) return NotFound();
 
-            ViewBag.Categories = _c_repository.GetAll();
+            ViewBag.Categories = _c_repository.GetAllAsync();
             return View(product);
         }
+
         [HttpPost]
-        public IActionResult Edit(int id, Product product)
+        public async Task<IActionResult> Edit(int id, Product product)
         {
             if (id != product.Id) return BadRequest();
             if (ModelState.IsValid)
             {
                 _p_repository.Update(product);
-                _p_repository.SaveChanges();
+                await _p_repository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.Categories =_c_repository.GetAll();
+            ViewBag.Categories = _c_repository.GetAllAsync();
             return View(product);
         }
-        //Delete
-        public IActionResult Delete(int id)
+
+        // Delete
+        public async Task<IActionResult> Delete(int id)
         {
-            var product = _p_repository.GetById(id);
+            var product = await _p_repository.GetByIdAsync(id);
             if (product == null) return NotFound();
             return View(product);
         }
+
         [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = _p_repository.GetById(id);
+            var product = await _p_repository.GetByIdAsync(id);
             if (product == null) return NotFound();
 
-            _p_repository.Delete(product);
-            _p_repository.SaveChanges();
+            _p_repository.Remove(product);
+            await _p_repository.SaveAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> QuickView(int id)
+        {
+            var product = await _p_repository.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return PartialView("_QuickView", product); // PartialView to display a modal window
         }
     }
 }

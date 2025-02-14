@@ -93,6 +93,8 @@ wwwroot\images\hero\slider-bg2.jpg
 wwwroot\images\hero\slider-bnr.jpg
 wwwroot\images\hero\small-banner-bg.png
 wwwroot\images\logo\logo.svg
+wwwroot\images\logo\User.png
+wwwroot\images\logo\user_1.png
 wwwroot\images\logo\white-logo.svg
 wwwroot\images\product-details\01.jpg
 wwwroot\images\product-details\02.jpg

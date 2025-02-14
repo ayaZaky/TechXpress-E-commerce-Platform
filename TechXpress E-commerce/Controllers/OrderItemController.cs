@@ -16,20 +16,17 @@ namespace TechXpress_E_commerce.Controllers
         }
 
         // Get all order items
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var orderItems = _orderItemRepository.GetAll().AsQueryable()
-                                                 .Include(oi => oi.Order)
-                                                 .Include(oi => oi.Product)
-                                                 .ToList();
+            var orderItems = await _orderItemRepository.GetAllAsync();
             return View(orderItems);
         }
 
         // Get order item by ID
         [HttpGet]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var orderItem = _orderItemRepository.GetById(id);
+            var orderItem = await _orderItemRepository.GetByIdAsync(id);
             if (orderItem == null)
                 return NotFound();
 
@@ -44,12 +41,12 @@ namespace TechXpress_E_commerce.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(OrderItem orderItem)
+        public async Task<IActionResult> Create(OrderItem orderItem)
         {
             if (ModelState.IsValid)
             {
-                _orderItemRepository.Add(orderItem);
-                _orderItemRepository.SaveChanges();
+                await _orderItemRepository.AddAsync(orderItem);
+                await _orderItemRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(orderItem);
@@ -57,16 +54,16 @@ namespace TechXpress_E_commerce.Controllers
 
         // Edit
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var orderItem = _orderItemRepository.GetById(id);
+            var orderItem = await _orderItemRepository.GetByIdAsync(id);
             if (orderItem == null)
                 return NotFound();
             return View(orderItem);
         }
 
         [HttpPost]
-        public IActionResult Edit(int id, OrderItem orderItem)
+        public async Task<IActionResult> Edit(int id, OrderItem orderItem)
         {
             if (id != orderItem.Id)
                 return BadRequest();
@@ -74,7 +71,7 @@ namespace TechXpress_E_commerce.Controllers
             if (ModelState.IsValid)
             {
                 _orderItemRepository.Update(orderItem);
-                _orderItemRepository.SaveChanges();
+                await _orderItemRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(orderItem);
@@ -82,9 +79,9 @@ namespace TechXpress_E_commerce.Controllers
 
         // Delete
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var orderItem = _orderItemRepository.GetById(id);
+            var orderItem = await _orderItemRepository.GetByIdAsync(id);
             if (orderItem == null)
                 return NotFound();
 
@@ -92,14 +89,14 @@ namespace TechXpress_E_commerce.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var orderItem = _orderItemRepository.GetById(id);
+            var orderItem = await _orderItemRepository.GetByIdAsync(id);
             if (orderItem == null)
                 return NotFound();
 
-            _orderItemRepository.Delete(orderItem);
-            _orderItemRepository.SaveChanges();
+            _orderItemRepository.Remove(orderItem);
+            await _orderItemRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
     }

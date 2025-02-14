@@ -18,7 +18,8 @@ namespace TechXpress_E_commerce.Models.AppDbContext
         public DbSet<PaymentTransaction> PaymentTransactions { get; set; }
         public DbSet<Refund> Refunds { get; set; }
         public DbSet<Address> Addresses { get; set; }
-         
+        public DbSet<ContactUs> ContactUs { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder); 

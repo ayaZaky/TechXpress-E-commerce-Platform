@@ -1,4 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+ 
+ 
 
 namespace TechXpress_E_commerce.View_Models
 {
@@ -16,12 +19,13 @@ namespace TechXpress_E_commerce.View_Models
         public string LastName { get; set; } = null!;
 
         [Required(ErrorMessage = "Email is required")]
-        [EmailAddress(ErrorMessage = "Invalid email address")]
+        [EmailAddress(ErrorMessage = "Invalid email address")]   
         public string Email { get; set; } = null!;
 
         [Required(ErrorMessage = "Phone number is required")]
         [Phone(ErrorMessage = "Invalid phone number")]
-        public string? PhoneNumber { get; set; }
+        [RegularExpression(@"^\+?\d{1,4}[\s-]?\(?\d{1,4}\)?[\s-]?\d{1,4}[\s-]?\d{1,4}$", ErrorMessage = "Phone number is not in a valid format.")]
+        public string PhoneNumber { get; set; } = null!;
 
         [Required(ErrorMessage = "Password is required")]
         [StringLength(100, MinimumLength = 6, ErrorMessage = "Password must be at least 6 characters long")]

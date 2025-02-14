@@ -16,7 +16,27 @@ namespace TechXpress_E_commerce.Controllers
         public IActionResult Index()
         {
             return View();
+        }  
+        public IActionResult Contact()
+        {
+            return View();
+        }  
+        public IActionResult About()
+        {
+            return View();
         }
+
+        [HttpPost]
+        public IActionResult SubmitContact(ContactUs model)
+        {
+            if (ModelState.IsValid)
+            {    
+                TempData["Success"] = "Your message has been sent successfully!";
+                return RedirectToAction("Contact");
+            }
+            return View("Contact", model);
+        }
+   
 
         public IActionResult Privacy()
         {

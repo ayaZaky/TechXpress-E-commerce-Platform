@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechXpress E-commerce")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb411ec232d41129b43a427016f2a95eb455a9c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ae2eb7a64e60450c2516899c0790f17a2eacee9")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechXpress E-commerce")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechXpress E-commerce")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TechXpress_E_commerce.Models;
 using TechXpress_E_commerce.View_Models;
 
@@ -10,7 +11,7 @@ namespace TechXpress_E_commerce.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager,SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -21,20 +22,24 @@ namespace TechXpress_E_commerce.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var user = new  ApplicationUser
+                if (!ModelState.IsValid)
+                {
+                    return View(model);
+                }
+
+                var user = new ApplicationUser
                 {
                     UserName = model.Email,
                     FirstName = model.FirstName,
-                    LastName = model.LastName, 
+                    LastName = model.LastName,
                     Email = model.Email,
-                    PhoneNumber = model.PhoneNumber, 
+                    PhoneNumber = model.PhoneNumber,
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow
                 };
@@ -43,33 +48,33 @@ namespace TechXpress_E_commerce.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    // Add a success message
-                    TempData["SuccessMessage"] = "Registration successful! Welcome to TechXpress."; 
-                    // Redirect to a confirmation or home page
-                    return RedirectToAction("Index", "Home");
-                    
+                    return RedirectToAction("Login");
                 }
 
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError("", error.Description);
                 }
-            }
 
-            return View(model);
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", ex.Message);
+                return View(model);
+            }
         }
 
         [HttpGet]
         public IActionResult Login(string? returnUrl = null)
-        { 
+        {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
-        { 
+        {
             if (ModelState.IsValid)
             {
                 var result = await _signInManager.PasswordSignInAsync(
@@ -102,6 +107,8 @@ namespace TechXpress_E_commerce.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        
+
 
         //private IActionResult RedirectToLocal(string? returnUrl)
         //{

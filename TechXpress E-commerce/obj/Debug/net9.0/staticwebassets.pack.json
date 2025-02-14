@@ -89,8 +89,16 @@
       "PackagePath": "staticwebassets\\images\\hero\\small-banner-bg.png"
     },
     {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\User.png",
+      "PackagePath": "staticwebassets\\images\\logo\\User.png"
+    },
+    {
       "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\logo.svg",
       "PackagePath": "staticwebassets\\images\\logo\\logo.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\user_1.png",
+      "PackagePath": "staticwebassets\\images\\logo\\user_1.png"
     },
     {
       "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce\\TechXpress E-commerce\\wwwroot\\images\\logo\\white-logo.svg",

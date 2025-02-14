@@ -20,9 +20,7 @@ namespace TechXpress_E_commerce.Controllers
         // Get all addresses
         public IActionResult Index()
         {
-            var addresses = _addressRepository.GetAll().AsQueryable()
-                                               .Include(a => a.User)
-                                               .ToList();
+            var addresses = _addressRepository.GetAllAsync();
             return View(addresses);
         }
 
@@ -30,7 +28,7 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            var address = _addressRepository.GetById(id);
+            var address = _addressRepository.GetByIdAsync(id);
             if (address == null)
                 return NotFound();
 
@@ -41,7 +39,7 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Users = _userRepository.GetAll().ToList();
+            ViewBag.Users = _userRepository.GetAllAsync();
             return View();
         }
 
@@ -51,8 +49,8 @@ namespace TechXpress_E_commerce.Controllers
         {
             if (ModelState.IsValid)
             {
-                _addressRepository.Add(address);
-                _addressRepository.SaveChanges();
+                _addressRepository.AddAsync(address);
+                _addressRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(address);
@@ -62,10 +60,9 @@ namespace TechXpress_E_commerce.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var address = _addressRepository.GetById(id);
+            var address = _addressRepository.GetByIdAsync(id);
             if (address == null)
-                return NotFound();
-
+                return NotFound();  
             return View(address);
         }
 
@@ -79,36 +76,14 @@ namespace TechXpress_E_commerce.Controllers
             if (ModelState.IsValid)
             {
                 _addressRepository.Update(address);
-                _addressRepository.SaveChanges();
+                _addressRepository.SaveAsync();
                 return RedirectToAction(nameof(Index));
             }
 
             return View(address);
         }
 
-        // Delete  
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            var address = _addressRepository.GetById(id);
-            if (address == null)
-                return NotFound();
-
-            return View(address);
-        }
-
-        // Delete
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var address = _addressRepository.GetById(id);
-            if (address == null)
-                return NotFound();
-
-            _addressRepository.Delete(address);
-            _addressRepository.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
+        
 
     }
 }
