@@ -1,0 +1,307 @@
+﻿ @model TechXpress.Data.Entities.Product
+@{
+    ViewData["Title"] = "Item Details";
+}
+ 
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">Single Product</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-nav">
+                    <li><a asp-controller="Home" asp-action="Index"><i class="lni lni-home"></i> Home</a></li>
+                  @*   <li><a href="index.html">Shop</a></li> *@
+                    <li>Single Product</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Item Details -->
+<section class="item-details section">
+    <div class="container">
+        <div class="top-area">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="product-images">
+                        <main id="gallery">
+                            <div class="main-img">
+                                <img src="@Model.Images.FirstOrDefault()?.ImageUrl" id="current" alt="@Model.Name">
+                            </div>
+                            <div class="images">
+                                @foreach (var image in Model.Images)
+                                {
+                                    <img src="@image.ImageUrl" class="img" alt="@Model.Name">
+                                }
+                            </div>
+                        </main>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="product-info">
+                        <h2 class="title">@Model.Name</h2>
+                        <p class="category"><i class="lni lni-tag"></i> @Model.Category.Name</p>
+                        <h3 class="price">EGP @Model.Price <span>EGP @Model.Price</span></h3>
+                        <p class="info-text">@Model.Description</p>
+                        <div class="product-details-info">
+                            <div class="single-block">
+                                <div class="row">
+                                    <div class="col-lg-5 col-12">
+                                        <div class="info-body">
+                                            <h4>Specifications</h4>
+                                            <ul class="normal-list">
+                                                @foreach (var spec in Model.Specifications?.Split(',') ?? new string[0])
+                                                {
+                                                    <li>@spec.Trim()</li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="form-group quantity">
+                                    <label>Quantity</label>
+                                    <select class="form-control">
+                                        @for (int i = 1; i <= 5; i++)
+                                        {
+                                            <option>@i</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="form-group">
+                                    <label style=" opacity: 0;">Wishlist</label>
+                                    <div class="wish-button">
+                                        <button class="btn"><i class="lni lni-heart"></i> To Wishlist</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="form-group">
+                                    <label style=" opacity: 0;">Compare</label>
+                                    <div class="wish-button">
+                                        <button class="btn"><i class="lni lni-reload"></i> Compare</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bottom-content">
+                            <div class="row align-items-end">
+
+                                <div class="col-lg-12 col-md-4 col-12">
+                                    <div class="button cart-button">
+                                        <form asp-controller="CartItem" asp-action="AddToCart" method="post" style="display:inline;">
+                                            <input type="hidden" name="productId" value="@Model.Id" />
+                                            <input type="hidden" name="quantity" value="1" />
+                                            <button type="submit" class="btn" style="width: 100%;">Add to Cart</button>
+                                        </form>
+                                        
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="product-details-info">
+
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="single-block give-review">
+                        <h4>@Model.Rating.ToString("N1") (Overall)</h4>
+                        <ul>
+                            <li>
+                                <span>5 stars - @Model.Rating.ToString("N1")</span>
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    <i class="lni lni-star-filled"></i>
+                                }
+                            </li>
+                        </ul>
+                        <button type="button" class="btn review-btn" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                            Leave a Review
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="single-block">
+                        <div class="reviews">
+                            <h4 class="title">Latest Reviews</h4>
+                            <!-- New Review -->
+                            <div class="single-review">
+                                <img src="~/images/logo/user_1.png" alt="#">
+                                <div class="review-info">
+                                    <h4>
+                                        Amazing Sound Quality and Comfort
+                                        <span>Emily Johnson</span>
+                                    </h4>
+                                    <ul class="stars">
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                    </ul>
+                                    <p>
+                                        I've been using these headphones for weeks, and the sound quality is outstanding! The
+                                        noise cancellation is top-tier. Super
+                                        comfortable for long hours!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single-review">
+                                <img src="~/images/logo/user_1.png" alt="#">
+                                <div class="review-info">
+                                    <h4>
+                                        Awesome quality for the price
+                                        <span>
+                                            Jacob Hammond
+                                        </span>
+                                    </h4>
+                                    <ul class="stars">
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                        <li><i class="lni lni-star-filled"></i></li>
+                                    </ul>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor...
+                                    </p>
+                                </div>
+                            </div>
+                            @* <div id="reviewsList">
+                                @if (Model.Reviews != null && Model.Reviews.Any())
+                                {
+                                    foreach (var review in Model.Reviews)
+                                    {
+                                        <div class="single-review">
+                                            <img src="@review.UserImage" alt="@review.UserName">
+                                            <div class="review-info">
+                                                <h4>
+                                                    @review.UserName
+                                                    <span>@review.Date</span>
+                                                </h4>
+                                                <div class="stars">
+                                                    @for (int i = 0; i < review.Rating; i++)
+                                                    {
+                                                        <i class="lni lni-star-filled"></i>
+                                                    }
+                                                </div>
+                                                <p>@review.Comment</p>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <p>No reviews yet. Be the first to review this product!</p>
+                                }
+                            </div> *@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Review Modal -->
+<div class="modal fade review-modal" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">Leave a Review</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <select class="form-control" name="rating" required>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Review</label>
+                        <textarea class="form-control" name="comment" rows="5" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('current').src = src;
+        }   
+        function addToCart() {
+            const quantity = document.getElementById('quantity').value;
+            // Add your cart logic here
+            alert('Added ' + quantity + ' item(s) to cart');
+        }   
+        function submitReview() {
+            const form = document.getElementById('reviewForm');
+            // Add your review submission logic here
+            alert('Thank you for your review!');
+            $('#reviewModal').modal('hide');
+        }
+    </script>
+}
+ 
+<!-- ========================= JS here ========================= -->
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/tiny-slider.js"></script>
+<script src="~/js/glightbox.min.js"></script>
+<script src="~/js/main.js"></script>
+<script type="text/javascript">
+    const current = document.getElementById("current");
+    const opacity = 0.6;
+    const imgs = document.querySelectorAll(".img");
+    imgs.forEach(img => {
+        img.addEventListener("click", (e) => {
+            //reset opacity
+            imgs.forEach(img => {
+                img.style.opacity = 1;
+            });
+            current.src = e.target.src;
+            //adding class
+            //current.classList.add("fade-in");
+            //opacity
+            e.target.style.opacity = opacity;
+        });
+    });
+     function submitReview() {
+            const form = document.getElementById('reviewForm');
+            // Add your review submission logic here
+            alert('Thank you for your review!');
+            $('#reviewModal').modal('hide');
+        }
+</script>
+ 

@@ -1,0 +1,57 @@
+﻿@model IEnumerable< TechXpress.Data.Entities.Product>
+
+@foreach (var product in Model)
+{
+    <div class="col-lg-3 col-md-6 col-12">
+        <!-- Start Single Product -->
+        <div class="single-product">
+            <div class="product-image">
+                <img src="@product.Images.FirstOrDefault()?.ImageUrl" alt="@product.Name">
+                <!-- Hover Icons -->
+                <ul class="action-icons">
+                    <li>
+                        <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" title="Item Details">
+                            <i class="lni lni-eye"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <form asp-controller="CartItem" asp-action="AddToCart" method="post" style="display:inline;">
+                            <input type="hidden" name="productId" value="@product.Id" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <button type="submit" title="Add to Cart">
+                                <i class="lni lni-cart"></i>
+                            </button>
+                        </form> 
+                    </li>
+                    <li>
+                      
+                        <form asp-controller="WishList" asp-action="AddToWishList" method="post" style="display:inline;">
+                            <input type="hidden" name="productId" value="@product.Id" />     
+                            <button type="submit" title="Add to Wishlist">
+                                <i class="lni lni-heart"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-info">
+                <span class="category">@product.Category.Name</span>
+                <h4 class="title">
+                    <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id">@product.Name</a>
+                </h4>
+                <ul class="review">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <li><i class="lni lni-star@(i <= product.Rating ? "-filled" : "")"></i></li>
+                    }
+                    <li><span>@product.Rating.0 Review(s)</span></li>
+                </ul>
+                <div class="price">
+                    <span>EGP @product.Price.ToString("F2")</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Single Product -->
+    </div>
+}

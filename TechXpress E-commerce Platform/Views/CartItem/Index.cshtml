@@ -1,0 +1,118 @@
+﻿@model IEnumerable<TechXpress.Data.Entities.CartItem>   
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">My Shopping Cart</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-nav">
+                    <li><a asp-controller="Home" asp-action="Index"><i class="lni lni-home"></i> Home</a></li>
+                    
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shopping-cart section">
+    <div class="container">
+        <div class="cart-list-head">
+            <div class="cart-list-title">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-12"></div>
+                    <div class="col-lg-4 col-md-3 col-12"><p>Product Name</p></div>
+                    <div class="col-lg-2 col-md-2 col-12"><p>Quantity</p></div>
+                    <div class="col-lg-2 col-md-2 col-12"><p>Subtotal</p></div>
+                    <div class="col-lg-2 col-md-2 col-12"><p>Discount</p></div>
+                    <div class="col-lg-1 col-md-2 col-12"><p>Remove</p></div>
+                </div>
+            </div>
+            
+            @foreach (var item in Model)
+            {
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                                <img src="@item.Product.Images.FirstOrDefault()?.ImageUrl" alt="#">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name">
+                                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">@item.Product.Name</a>
+                            </h5>
+                            <p class="product-des">
+                                <span><em>Type:</em> @item.Product.Category.Name</span>
+                               @*  <span><em>Color:</em> @item.Color</span> *@
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    @for (int i = 1; i <= 10; i++)
+                                    {
+                                        <option value="@i" selected="@(i == item.Quantity ? "selected" : null)">@i</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>EGP @item.Product.Price </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>@* @(item.Discount > 0 ? item.Discount.ToString("C") : *@ — </p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <form asp-controller="CartItem" asp-action="RemoveFromCart" method="post">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="remove-item" title="Remove this item">
+                                    <i class="lni lni-close"></i>
+                                </button>
+                            </form>  
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="total-amount">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-12">
+                            <div class="left">
+                                <div class="coupon">
+                                    <form action="#" method="post">
+                                        <input name="Coupon" placeholder="Enter Your Coupon">
+                                        <div class="button">
+                                            <button class="btn">Apply Coupon</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="right">
+                                <ul>
+                                    <li>Cart Subtotal<span>@Model.Sum(i => i.Product.Price * i.Quantity).ToString("C")</span></li>
+                                    <li>Shipping<span>Free</span></li>
+                                  @*   <li>You Save<span>@Model.Sum(i => i.Discount).ToString("C")</span></li>
+                                    <li class="last">You Pay<span>@(Model.Sum(i => i.Price * i.Quantity) - Model.Sum(i => i.Discount)).ToString("C")</span></li>
+                              *@   </ul>
+                                <div class="button">
+                                    <a href="@Url.Action("Checkout", "Order")" class="btn">Checkout</a>
+                                    <a href="@Url.Action("Index", "Product")" class="btn btn-alt">Continue shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

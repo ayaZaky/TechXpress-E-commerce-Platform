@@ -1,0 +1,295 @@
+﻿@using TechXpress.Data.Entities;
+@using X.PagedList.Extensions;
+@model X.PagedList.IPagedList<Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">Shop Grid</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-nav">
+                    <li><a asp-controller="Home" asp-action="Index"><i class="lni lni-home"></i> Home</a></li>
+                    <li><a href="javascript:void(0)">Shop</a></li>
+                    <li>Shop Grid</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="product-grids section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-12">
+                <!-- Start Product Sidebar -->
+                <div class="product-sidebar">
+                    <!-- Search Widget -->
+                    <div class="single-widget search">
+                        <h3>Search Product</h3>
+                        <form asp-controller="Product" asp-action="Index" method="get">
+                            <input type="text" name="searchTerm"  placeholder="Search here..." value="@Context.Request.Query["searchTerm"]"/>
+                            <button type="submit"><i class="lni lni-search-alt"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="single-widget">
+                        <h3>
+                            <a asp-controller="Product" asp-action="Index">
+                                All Categories
+                            </a>
+                        </h3>
+                        <ul class="list">
+                            
+                            @foreach (var category in ViewBag.Categories ?? new List<Category>())
+                            {
+                                <li>
+                                    <a asp-controller="Product" asp-action="Index" asp-route-categoryId="@category.Id">
+                                        @category.Name  
+                                        <span>
+                                            (
+                                            @(ViewBag.CategoryProductCounts.ContainsKey(category.Id) ? ViewBag.CategoryProductCounts[category.Id] : 0)
+                                            )
+                                        </span>
+                                    </a>
+                                     
+                                </li>
+                            }
+                        </ul>
+                    </div>
+
+                    <!-- Price Range Widget -->
+                    <div class="single-widget range">
+                        <h3>Price Range</h3>
+                        
+                        <input type="range" class="form-range" id="rangeMin"
+                               step="1" min="10" max="10000" value="10"
+                               oninput="updatePriceValue(); filterByPrice();">  
+                        <div class="range-inner">
+                            <label>$</label>
+                            <input type="text" class="min" id="rangePrimary" placeholder="10" radonly>
+                        </div>
+                        
+                        <input type="range" class="form-range" id="rangeMax"
+                               step="1" min="10" max="100000" value="100000"
+                               oninput="updatePriceValue(); filterByPrice();">  
+                        <div class="range-inner">
+                            <label>$</label>
+                            <input type="text" class="max" id="rangePrimary" placeholder="10000" readonly>
+                        </div>
+                    </div>  
+                    <!-- Brand Filter Widget -->
+                    <!-- Brand Filter Widget -->
+                    <div class="single-widget condition">
+                        <h3>Filter by Brand</h3>
+
+                        <!-- اختيار "All Brands" -->
+                        <div class="form-check">
+                            <input class="form-check-input brand-filter" type="radio" name="brand"
+                                   value="" id="brandAll" checked>
+                            <label class="form-check-label" for="brandAll">All Brands</label>
+                        </div>
+
+                        @foreach (var brand in Model.Select(p => p.Brand).Distinct())
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input brand-filter" type="radio" name="brand"
+                                       value="@brand" id="brand@(brand.Replace(" ", ""))">
+                                <label class="form-check-label" for="brand@(brand.Replace(" ", ""))">
+                                    @brand
+                                </label>
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-12">
+                <div class="product-grids-head">
+                    <div class="product-grid-topbar">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-8 col-12">
+                                <div class="product-sorting">
+                                    <label for="sorting">Sort by:</label>
+                                    <select class="form-control" id="sorting" onchange="handleSort(this.value)">
+                                        <option value="popularity">Popularity</option>
+                                        <option value="price_asc">Low - High Price</option>
+                                        <option value="price_desc">High - Low Price</option>
+                                        <option value="rating">Average Rating</option>
+                                        <option value="name_asc">A - Z Order</option>
+                                        <option value="name_desc">Z - A Order</option>
+                                    </select>
+                                    <h3 class="total-show-product">Showing: <span>1 - @Model.Count() items</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-grid" role="tabpanel">
+                            <div class="row" id="productsContainer">
+                                @foreach (var product in Model)
+                                {
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="single-product">
+                                            <div class="product-image">
+                                                <img src="@product.Images.FirstOrDefault()?.ImageUrl" alt="@product.Name">
+                                                <ul class="action-icons">
+                                                    <li>
+                                                        <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" title="Item Details">
+                                                            <i class="lni lni-eye"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <form asp-controller="CartItem" asp-action="AddToCart" method="post" style="display:inline;">
+                                                            <input type="hidden" name="productId" value="@product.Id" />
+                                                            <input type="hidden" name="quantity" value="1" />
+                                                            <button type="submit" title="Add to Cart">
+                                                                <i class="lni lni-cart"></i>
+                                                            </button>
+                                                        </form>
+                                                    </li>
+                                                    <li>
+                                                        <a asp-controller="Wishlist" asp-action="AddToWishlist" asp-route-id="@product.Id"
+                                                           class="wishlist" title="Add to Wishlist">
+                                                            <i class="lni lni-heart"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="product-info">
+                                                <span class="category">@product.Category.Name</span>
+                                                <h4 class="title">
+                                                    <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">@product.Name</a>
+                                                </h4>
+                                                <ul class="review">
+                                                    @for (int i = 1; i <= 5; i++)
+                                                    {
+                                                        <li><i class="lni lni-star@(i <= product.Rating ? "-filled" : "")"></i></li>
+                                                    }
+                                                    <li><span>@product.Rating.ToString("F1") Review(s)</span></li>
+                                                </ul>
+                                                <div class="price">
+                                                    <span>EGP @product.Price.ToString("F2")</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- Pagination -->
+                                      @*   @using X.PagedList.Mvc.Core *@
+
+                                        <div class="pagination left">
+                                            <ul class="pagination-list">
+                                                @if (Model.HasPreviousPage)
+                                                {
+                                                    <li>
+                                                        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">
+                                                            <i class="lni lni-chevron-left"></i>
+                                                        </a>
+                                                    </li>
+                                                }
+
+                                                @for (int i = 1; i <= Model.PageCount; i++)
+                                                {
+                                                    <li class="@(i == Model.PageNumber ? "active" : "")">
+                                                        <a href="@Url.Action("Index", new { page = i })">@i</a>
+                                                    </li>
+                                                }
+
+                                                @if (Model.HasNextPage)
+                                                {
+                                                    <li>
+                                                        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">
+                                                            <i class="lni lni-chevron-right"></i>
+                                                        </a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </div>
+
+
+                                                                            <!--/ End Pagination -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+
+<!--   البحث بالكلمة المفتاحية -->
+<script>
+    $(document).ready(function () {
+        $("input[name='searchTerm']").on("keyup", function () {
+            searchByKeyword();
+        });
+
+        function searchByKeyword() {
+            var searchTerm = $("input[name='searchTerm']").val();
+
+            $.get("/Product/Index", { searchTerm: searchTerm }, function (data) {
+                $("#productsContainer").html($(data).find("#productsContainer").html());
+            });
+        }
+    });
+</script>
+<!--   البحث باالكاتيجوري  -->
+<script>
+    $(document).ready(function () {
+        $(".category-filter").click(function () {
+            var categoryId = $(this).data("category");
+
+            $.get("/Product/Index", { categoryId: categoryId }, function (data) {
+                $("#productsContainer").html(data);
+            });
+        });
+    });
+</script>
+<!-- الفلترة حسب السعر -->    
+<script>
+    function updatePriceValue() {
+              $(".min").val(document.getElementById("rangeMin").value);
+              $(".max").val(document.getElementById("rangeMax").value);    
+    }
+
+    function filterByPrice() {
+        var minPrice = $("#rangeMin").val();  
+        var maxPrice = $("#rangeMax").val(); // جلب الحد الأقصى من السلايدر
+
+        $.get("/Product/Index", { minPrice: minPrice, maxPrice: maxPrice }, function (data) {
+            $("#productsContainer").html($(data).find("#productsContainer").html());
+        });
+    }
+</script>
+<!-- الفلترة حسب البراند -->
+<script>
+    $(document).ready(function () {
+        $(".brand-filter").on("change", function () {
+            var selectedBrand = $("input[name='brand']:checked").val();
+
+            $.get("/Product/Index", { brand: selectedBrand }, function (data) {
+                $("#productsContainer").html($(data).find("#productsContainer").html());
+            });
+        });
+    });
+
+</script>
+ 
