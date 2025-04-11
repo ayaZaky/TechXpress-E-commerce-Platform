@@ -19,8 +19,7 @@ TechXpress is a full-featured e-commerce platform that allows users to browse el
 - **Stripe** (for payment integration)
 - **JQuery**
 - **DataTables**
-- **Toaster JS**
-- **Microsoft Azure** (for deployment)
+- **Toaster JS** 
 
 # Installation ⚙️:
 
