@@ -1,0 +1,212 @@
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.min.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\glightbox.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\images\favicon.svg
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\images\logo\logo.svg
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\LICENSE.txt
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation\LICENSE.md
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\dashboard.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\bootstrap.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\fonts\LineIcons.svg
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\glightbox.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\bootstrap.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\tiny-slider.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\dashboard.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\favicon.ico
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\tiny-slider.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\main.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\site.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\LineIcons.3.0.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\js\main.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\css\site.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\images\logo\white-logo.svg
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\TechXpress E-commerce Platform\TechXpress E-commerce Platform\TechXpress E-commerce Platform\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\css\bootstrap.min.css
+wwwroot\css\dashboard.css
+wwwroot\css\glightbox.min.css
+wwwroot\css\LineIcons.3.0.css
+wwwroot\css\main.css
+wwwroot\css\site.css
+wwwroot\css\tiny-slider.css
+wwwroot\favicon.ico
+wwwroot\fonts\LineIcons.eot
+wwwroot\fonts\LineIcons.svg
+wwwroot\fonts\LineIcons.ttf
+wwwroot\fonts\LineIcons.woff
+wwwroot\fonts\LineIcons.woff2
+wwwroot\images\banner\banner.jpg
+wwwroot\images\banner\banner-1-bg.jpg
+wwwroot\images\banner\banner-2-bg.jpg
+wwwroot\images\favicon.svg
+wwwroot\images\footer\credit-cards-footer.png
+wwwroot\images\header\cart-items\item1.jpg
+wwwroot\images\header\cart-items\item2.jpg
+wwwroot\images\hero\slider-bg1.jpg
+wwwroot\images\hero\slider-bg2.jpg
+wwwroot\images\hero\slider-bnr.jpg
+wwwroot\images\hero\small-banner-bg.png
+wwwroot\images\logo\logo.svg
+wwwroot\images\logo\User.png
+wwwroot\images\logo\user_1.png
+wwwroot\images\logo\user_2.png
+wwwroot\images\logo\white-logo.svg
+wwwroot\images\payment\card.png
+wwwroot\images\product-details\01.jpg
+wwwroot\images\product-details\02.jpg
+wwwroot\images\product-details\03.jpg
+wwwroot\images\product-details\04.jpg
+wwwroot\images\product-details\05.jpg
+wwwroot\images\products\product-1.jpg
+wwwroot\images\products\product-10.png
+wwwroot\images\products\product-1728f536-2cbf-4b11-bc3f-a86c458ef994.PNG
+wwwroot\images\products\product-2.jpg
+wwwroot\images\products\product-2429ddcf-84b6-4cd1-b58e-01d915edcd2f.jpg
+wwwroot\images\products\product-2724640f-3519-4b57-8186-1b09cfd53b67.jpg
+wwwroot\images\products\product-28fafd99-a49a-402c-87e8-8a04f7b19ba8.jpg
+wwwroot\images\products\product-3.jpg
+wwwroot\images\products\product-3095268b-24fa-4bc1-b554-b326cc63d69a.png
+wwwroot\images\products\product-3f082e01-4cda-423d-9463-3f99b0c92727.png
+wwwroot\images\products\product-3fb5a71b-9d42-43eb-86f2-4f1a899d7b6d.jpg
+wwwroot\images\products\product-4.jpg
+wwwroot\images\products\product-4632a21d-f6ac-430c-b532-b1d966fb10a0.png
+wwwroot\images\products\product-5.jpg
+wwwroot\images\products\product-6.jpg
+wwwroot\images\products\product-62fd8e43-8d25-408e-8f78-c1059824c0b7.jpg
+wwwroot\images\products\product-7.jpg
+wwwroot\images\products\product-8.jpg
+wwwroot\images\products\product-822094a9-3e7e-4349-8625-4bfd43b9c14c.png
+wwwroot\images\products\product-9.png
+wwwroot\images\products\product-920ef560-3a40-4276-b542-25c0c51402f9.png
+wwwroot\images\products\product-9c833bf2-8bf8-45a6-8e32-3ed4a99c8cac.png
+wwwroot\images\products\product-ae2f4040-3386-4125-93a3-abc9d5bdb9c4.png
+wwwroot\images\products\product-c1f35b5a-976a-4b0a-8f1f-be7da8159284.png
+wwwroot\images\products\product-c2d4f7a4-0f42-42a3-a40c-26ed9643bda6.PNG
+wwwroot\images\products\product-c611d48c-a1ef-4090-a9bb-0a8249c62dce.jpg
+wwwroot\images\products\product-d43eb564-456c-4425-b308-87d03f64e094.png
+wwwroot\images\products\product-da2a18fe-c165-405c-9487-d95c198ba86e.jpg
+wwwroot\images\products\product-dbd1f690-30c8-4d95-beb6-1829f931decc.png
+wwwroot\images\products\product-e33d4cec-542e-45a6-9ac0-ed94cc6a1294.png
+wwwroot\images\products\product-e37a5bf7-0d2b-45e6-9671-40df80782c85.jpg
+wwwroot\images\products\product-e818eea4-c0d2-41ff-b6dc-b64d63359eac.png
+wwwroot\images\products\product-f0c107a8-2119-411c-87f5-08f5263e31aa.png
+wwwroot\images\products\product-f5c9a37d-c1d5-436c-bebd-2104302c9b29.png
+wwwroot\js\bootstrap.min.js
+wwwroot\js\dashboard.js
+wwwroot\js\glightbox.min.js
+wwwroot\js\main.js
+wwwroot\js\site.js
+wwwroot\js\tiny-slider.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

@@ -1,0 +1,456 @@
+﻿ 
+<!-- Start Breadcrumbs -->
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">
+                        Profile 
+                    </h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-nav">
+
+                    <li><a asp-controller="Home" asp-action="Index"><i class="lni lni-home"></i> Home</a></li>
+                    <li>Profile</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@model TechXpress.Data.Entities.ApplicationUser
+
+<div class="container py-5">
+    <div class="row">
+        <!-- Profile Sidebar -->
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="~/images/logo/User.png" class="rounded-circle mb-3" style="width: 100px; height: 100px;" alt="Profile Picture">
+                    <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+                    <p class="text-muted">Customer since @Model.CreatedAt.Year</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item active" data-section="profile">Profile</li>
+                    <li class="list-group-item" data-section="orders">Order History</li>
+                    <li class="list-group-item" data-section="settings">Change Password</li>
+                    <li class="list-group-item" onclick="document.getElementById('logoutForm').submit()">Logout</li>
+
+                    <form id="logoutForm" form method="post"  asp-action="Logout" class="d-none">
+                        @Html.AntiForgeryToken()
+                    </form>
+                     
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-9">
+            <!-- Profile Information -->
+            <div id="profileSection" class="content-section">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4 class="mb-0">Profile Information</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="profileForm" method="post" asp-action="Profile" >
+                            @Html.AntiForgeryToken() <!-- Add this line -->
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" name="FirstName" value="@Model.FirstName" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" name="LastName" value="@Model.LastName" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="Email" value="@Model.Email" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" name="PhoneNumber" value="@Model.PhoneNumber" />
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Profile</button>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order History -->
+            <div id="ordersSection" class="content-section d-none">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">Order History</h4>
+                    </div>
+                    <div class="card-body">
+                      @if (Model.Orders != null && Model.Orders.Any()) // Check if there are any orders
+                        {          
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Date</th>
+                                        <th>Items</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="orderHistory">
+                                    @foreach (var order in Model.Orders)
+                                    {
+                                        <tr>
+                                            <td>@order.Id</td>
+                                            <td>@order.CreatedAt.ToString("dd/MM/yyyy")</td>
+                                            <td>@order.OrderItems.Count</td>
+                                            <td>@order.TotalAmount</td>
+                                            <td>@order.OrderStatus</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>                                                           
+						}
+						else
+						{
+							<p class="text-center">No orders found!..</p>
+						}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Section -->
+            <div id="settingsSection" class="content-section d-none">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h4 class="mb-0">Change Password</h4>
+                    </div>
+                    <div class="card-body">
+                        
+
+                        <form id="passwordForm" asp-action="ChangePassword" method="post">
+                            @Html.AntiForgeryToken()
+                               
+                            <div class="mb-3">
+                                <label class="form-label">Current Password</label>
+                                <input type="password" class="form-control" id="currentPassword" name="CurrentPassword" required>
+                                <div class="invalid-feedback">Please enter your current password</div>
+                            </div>
+                                     
+                            <div class="mb-3">
+                                <label class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="newPassword" name="NewPassword" required>
+                                <div class="invalid-feedback">Password must be at least 8 characters</div>
+                            </div>
+                                        
+                            <div class="mb-3">
+                                <label class="form-label">Confirm New Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" required>
+                                <div class="invalid-feedback">Passwords do not match</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Change Password</button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+    :root {
+        --primary-color: #0167f3;
+    }
+
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .card-header {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        padding: 1rem;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+        .btn-primary:hover {
+            background-color: #0152c2;
+            border-color: #0152c2;
+        }
+
+    .list-group-item {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .list-group-item.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .table th {
+        font-weight: 600;
+        color: #444;
+    }
+
+    .status-badge {
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .status-delivered {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .status-processing {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .status-cancelled {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .content-section {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+        .content-section.d-none {
+            opacity: 0;
+        }
+
+    .form-check {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Password form styles */
+    .invalid-feedback {
+        display: none;
+    }
+
+    .form-control.is-invalid {
+        border-color: #dc3545;
+        padding-right: calc(1.5em + 0.75rem);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right calc(0.375em + 0.1875rem) center;
+        background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+    }
+
+        .form-control.is-invalid:focus {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+        }
+
+        .form-control.is-invalid ~ .invalid-feedback {
+            display: block;
+        }
+</style>
+<script>
+        // Sample order data
+    const orders = [
+      {
+        id: "ORD-001",
+        date: "2024-02-20",
+        items: 3,
+        total: "$150.00",
+        status: "Delivered"
+      },
+      {
+        id: "ORD-002",
+        date: "2024-02-15",
+        items: 1,
+        total: "$75.00",
+        status: "Processing"
+      },
+      {
+        id: "ORD-003",
+        date: "2024-02-10",
+        items: 2,
+        total: "$120.00",
+        status: "Cancelled"
+      }
+    ];
+
+    // Populate order history
+    function populateOrderHistory() {
+      const orderHistoryTable = document.getElementById('orderHistory');
+      orderHistoryTable.innerHTML = ''; // Clear existing content
+
+      orders.forEach(order => {
+        const statusClass = `status-${order.status.toLowerCase()}`;
+        const row = `
+          <tr>
+            <td>${order.id}</td>
+            <td>${order.date}</td>
+            <td>${order.items}</td>
+            <td>${order.total}</td>
+            <td><span class="status-badge ${statusClass}">${order.status}</span></td>
+          </tr>
+        `;
+        orderHistoryTable.innerHTML += row;
+      });
+    }
+       
+    // Function to show alert messages
+    function showAlert(message, type) {
+        const alertDiv = document.createElement('div');
+        alertDiv.classList.add('alert', `alert-${type}`);
+        alertDiv.textContent = message;
+        document.body.appendChild(alertDiv);
+        setTimeout(() => alertDiv.remove(), 3000); // Remove alert after 3 seconds
+    }
+
+    // Handle settings form submission
+    document.getElementById('settingsForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      showAlert('Settings saved successfully!', 'success');
+    });
+
+     document.getElementById('passwordForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const currentPassword = document.getElementById('currentPassword').value;
+      const newPassword = document.getElementById('newPassword').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Reset previous validation states
+      document.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+
+      let isValid = true;
+
+      // Validate current password
+      if (!currentPassword) {
+        document.getElementById('currentPassword').classList.add('is-invalid');
+        isValid = false;
+      }
+
+      // Validate new password
+      if (newPassword.length < 8) {
+        document.getElementById('newPassword').classList.add('is-invalid');
+        isValid = false;
+      }
+
+      // Validate password match
+      if (newPassword !== confirmPassword) {
+        document.getElementById('confirmPassword').classList.add('is-invalid');
+        isValid = false;
+      }
+
+      // If all validations pass, submit the form manually
+      if (isValid) {
+        e.target.submit(); // This allows the form to be submitted to the server
+      }
+    });
+
+
+    // Show alert message
+    function showAlert(message, type = 'success') {
+      const alertDiv = document.createElement('div');
+      alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+      alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      `;
+
+      // Find the active section and insert alert at the top
+      const activeSection = document.querySelector('.content-section:not(.d-none)');
+      activeSection.insertBefore(alertDiv, activeSection.firstChild);
+
+      // Auto dismiss after 3 seconds
+      setTimeout(() => {
+        alertDiv.remove();
+      }, 3000);
+    }
+
+    // Handle navigation
+   function showSection(sectionId) {
+  // Hide all sections
+  document.querySelectorAll('.content-section').forEach(section => {
+    section.classList.add('d-none');
+  });
+
+  // Show selected section
+  const selectedSection = document.getElementById(`${sectionId}Section`);
+  if (selectedSection) {
+    selectedSection.classList.remove('d-none');
+  }
+
+  // Handle logout
+  if (sectionId === 'logout') {
+    showAlert('Logging out...', 'info');
+    setTimeout(() => {
+      document.getElementById('logoutForm').submit(); // real logout
+    }, 1000);
+  }
+}
+
+
+    // Handle sidebar navigation
+    document.querySelectorAll('.list-group-item').forEach(item => {
+      item.addEventListener('click', () => {
+        // Update active state
+        document.querySelectorAll('.list-group-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        // Show corresponding section
+        const sectionId = item.getAttribute('data-section');
+        showSection(sectionId);
+      });
+    });
+
+    // Initialize the page
+    document.addEventListener('DOMContentLoaded', () => {
+      populateOrderHistory();
+      showSection('profile'); // Show profile section by default
+    });
+</script>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                var successMessage = '@TempData["SuccessMessage"]';
+
+            if (successMessage) {
+                showAlert(successMessage, 'success'); // هنا بتستخدمي الفانكشن بتاعتك
+            }
+        });
+    </script>
+}
+
+

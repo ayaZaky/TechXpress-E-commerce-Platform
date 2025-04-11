@@ -1,0 +1,149 @@
+﻿@model TechXpress_E_commerce_Platform.Areas.Admin.ViewModels.ProductViewModel
+
+<div class="modal fade" id="addProductModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form asp-action="Create" asp-controller="Products" method="post" id="createProductForm" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <div class="modal-body">
+             
+                    <div id="errorMessages" class="text-danger" style="display:none;"></div>
+
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Name" class="form-label">Product Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="CategoryId" class="form-label">Category</label>
+                            <select class="form-select" id="CategoryId" name="CategoryId" required>
+                                <option value="">-- Select Category --</option>
+                                @foreach (var category in ViewBag.Categories as List<SelectListItem>)
+                                {
+                                    <option value="@category.Value">@category.Text</option>
+                                }
+                            </select>
+                         
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Price" class="form-label">Price</label>
+                            <input asp-for="Price" class="form-control" type="number" step="0.01" min="0.01" max="999999.99" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="StockQuantity" class="form-label">Stock Quantity</label>
+                            <input asp-for="StockQuantity" class="form-control" type="number" min="0" />
+                            <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Description</label>
+                        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Brand" class="form-label">Brand</label>
+                            <input asp-for="Brand" class="form-control" />
+                            <span asp-validation-for="Brand" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Rating" class="form-label">Rating (1-5)</label>
+                            <input asp-for="Rating" class="form-control" type="number" step="0.1" min="1" max="5" />
+                            <span asp-validation-for="Rating" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Specifications" class="form-label">Specifications</label>
+                        <textarea asp-for="Specifications" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Specifications" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check">
+                                <input asp-for="IsAvailable" class="form-check-input" />
+                                <label asp-for="IsAvailable" class="form-check-label">Available</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check">
+                                <input asp-for="IsFeatured" class="form-check-input" />
+                                <label asp-for="IsFeatured" class="form-check-label">Featured</label>
+                            </div>
+                        </div>
+                    </div>      
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                   <div class="mb-3">
+                        <label class="form-label">Add Image</label><br />
+                        <div class="btn-group" role="group" aria-label="Image Upload Options">
+                            <button type="button" class="btn btn-outline-primary" id="uploadImageBtn">
+                                <i class="fa fa-upload"></i> Upload from Device
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" id="urlImageBtn">
+                                <i class="fa fa-link"></i> Enter Image URLs
+                            </button>
+                        </div>
+                    </div>
+                        
+                    <div class="form-group" id="uploadImageDiv" style="display: none;">
+                        <label asp-for="UploadedImages" class="control-label">Upload Product Images</label>
+                        <input asp-for="UploadedImages" type="file" multiple class="form-control" />
+                        <span asp-validation-for="UploadedImages" class="text-danger"></span>
+                    </div>
+                    
+                    <div class="form-group" id="urlImageDiv" style="display: none;">
+                        <label asp-for="ImageUrls" class="control-label">Enter Image URLs</label>
+                        <textarea asp-for="ImageUrls" class="form-control" placeholder="Enter image URLs separated by commas"></textarea>
+                        <span asp-validation-for="ImageUrls" class="text-danger"></span>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                           
+                            $("#uploadImageBtn").click(function () {
+                                $("#uploadImageDiv").show();
+                                $("#urlImageDiv").hide();
+                            });  
+                            $("#urlImageBtn").click(function () {
+                                $("#urlImageDiv").show();
+                                $("#uploadImageDiv").hide();
+                            });
+                               
+                            $("#uploadImageBtn").click();
+                        });
+                    </script>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>   
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+}
+
+
+  

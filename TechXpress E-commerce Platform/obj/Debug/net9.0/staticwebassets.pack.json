@@ -1,0 +1,569 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TechXpress.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TechXpress.Web.5g8ixlvjf8.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\LineIcons.3.0.css",
+      "PackagePath": "staticwebassets\\css\\LineIcons.3.0.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\css\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\css\\tiny-slider.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\fonts\\LineIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.eot"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\fonts\\LineIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\fonts\\LineIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.ttf"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\fonts\\LineIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\fonts\\LineIcons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\LineIcons.woff2"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\banner\\banner-1-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-1-bg.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\banner\\banner-2-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-2-bg.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\banner\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\images\\favicon.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\footer\\credit-cards-footer.png",
+      "PackagePath": "staticwebassets\\images\\footer\\credit-cards-footer.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\header\\cart-items\\item1.jpg",
+      "PackagePath": "staticwebassets\\images\\header\\cart-items\\item1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\header\\cart-items\\item2.jpg",
+      "PackagePath": "staticwebassets\\images\\header\\cart-items\\item2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\hero\\slider-bg1.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bg1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\hero\\slider-bg2.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bg2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\hero\\slider-bnr.jpg",
+      "PackagePath": "staticwebassets\\images\\hero\\slider-bnr.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\hero\\small-banner-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero\\small-banner-bg.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\logo\\User.png",
+      "PackagePath": "staticwebassets\\images\\logo\\User.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\logo\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\logo\\user_1.png",
+      "PackagePath": "staticwebassets\\images\\logo\\user_1.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\logo\\user_2.png",
+      "PackagePath": "staticwebassets\\images\\logo\\user_2.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\logo\\white-logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo\\white-logo.svg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\payment\\card.png",
+      "PackagePath": "staticwebassets\\images\\payment\\card.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\product-details\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\01.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\product-details\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\02.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\product-details\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\03.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\product-details\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\04.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\product-details\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\product-details\\05.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-10.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-10.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-1728f536-2cbf-4b11-bc3f-a86c458ef994.PNG",
+      "PackagePath": "staticwebassets\\images\\products\\product-1728f536-2cbf-4b11-bc3f-a86c458ef994.PNG"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-2429ddcf-84b6-4cd1-b58e-01d915edcd2f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2429ddcf-84b6-4cd1-b58e-01d915edcd2f.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-2724640f-3519-4b57-8186-1b09cfd53b67.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-2724640f-3519-4b57-8186-1b09cfd53b67.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-28fafd99-a49a-402c-87e8-8a04f7b19ba8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-28fafd99-a49a-402c-87e8-8a04f7b19ba8.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-3.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-3095268b-24fa-4bc1-b554-b326cc63d69a.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-3095268b-24fa-4bc1-b554-b326cc63d69a.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-3f082e01-4cda-423d-9463-3f99b0c92727.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-3f082e01-4cda-423d-9463-3f99b0c92727.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-3fb5a71b-9d42-43eb-86f2-4f1a899d7b6d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-3fb5a71b-9d42-43eb-86f2-4f1a899d7b6d.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-4.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-4632a21d-f6ac-430c-b532-b1d966fb10a0.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-4632a21d-f6ac-430c-b532-b1d966fb10a0.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-5.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-6.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-62fd8e43-8d25-408e-8f78-c1059824c0b7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-62fd8e43-8d25-408e-8f78-c1059824c0b7.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-7.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-8.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-822094a9-3e7e-4349-8625-4bfd43b9c14c.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-822094a9-3e7e-4349-8625-4bfd43b9c14c.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-9.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-9.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-920ef560-3a40-4276-b542-25c0c51402f9.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-920ef560-3a40-4276-b542-25c0c51402f9.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-9c833bf2-8bf8-45a6-8e32-3ed4a99c8cac.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-9c833bf2-8bf8-45a6-8e32-3ed4a99c8cac.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-ae2f4040-3386-4125-93a3-abc9d5bdb9c4.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-ae2f4040-3386-4125-93a3-abc9d5bdb9c4.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-c1f35b5a-976a-4b0a-8f1f-be7da8159284.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-c1f35b5a-976a-4b0a-8f1f-be7da8159284.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-c2d4f7a4-0f42-42a3-a40c-26ed9643bda6.PNG",
+      "PackagePath": "staticwebassets\\images\\products\\product-c2d4f7a4-0f42-42a3-a40c-26ed9643bda6.PNG"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-c611d48c-a1ef-4090-a9bb-0a8249c62dce.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-c611d48c-a1ef-4090-a9bb-0a8249c62dce.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-d43eb564-456c-4425-b308-87d03f64e094.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-d43eb564-456c-4425-b308-87d03f64e094.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-da2a18fe-c165-405c-9487-d95c198ba86e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-da2a18fe-c165-405c-9487-d95c198ba86e.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-dbd1f690-30c8-4d95-beb6-1829f931decc.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-dbd1f690-30c8-4d95-beb6-1829f931decc.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-e33d4cec-542e-45a6-9ac0-ed94cc6a1294.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-e33d4cec-542e-45a6-9ac0-ed94cc6a1294.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-e37a5bf7-0d2b-45e6-9671-40df80782c85.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product-e37a5bf7-0d2b-45e6-9671-40df80782c85.jpg"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-e818eea4-c0d2-41ff-b6dc-b64d63359eac.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-e818eea4-c0d2-41ff-b6dc-b64d63359eac.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-f0c107a8-2119-411c-87f5-08f5263e31aa.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-f0c107a8-2119-411c-87f5-08f5263e31aa.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\images\\products\\product-f5c9a37d-c1d5-436c-bebd-2104302c9b29.png",
+      "PackagePath": "staticwebassets\\images\\products\\product-f5c9a37d-c1d5-436c-bebd-2104302c9b29.png"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\js\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\js\\tiny-slider.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\TechXpress E-commerce Platform\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.TechXpress.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.TechXpress.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.TechXpress.Web.props",
+      "PackagePath": "build\\TechXpress.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.TechXpress.Web.props",
+      "PackagePath": "buildMultiTargeting\\TechXpress.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.TechXpress.Web.props",
+      "PackagePath": "buildTransitive\\TechXpress.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
