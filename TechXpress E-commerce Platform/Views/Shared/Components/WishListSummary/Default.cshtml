@@ -1,0 +1,56 @@
+﻿@model IEnumerable<TechXpress.Data.Entities.WishListItem>
+
+<div class="cart-items">
+    <a href="javascript:void(0)" class="main-btn">
+        <i class="lni lni-heart"></i>
+        <span class="total-items">@Model.Count()</span>
+    </a>
+    <!-- Shopping Item -->
+    <div class="shopping-item">
+        <div class="dropdown-cart-header">
+            <span>@Model.Count() Items</span>
+            <a asp-controller="WishList" asp-action="Index">View WishList</a>
+        </div>
+        <ul class="shopping-list" style="max-height: 300px; overflow-y: auto; ">
+            @foreach (var item in Model)
+            {
+                <li id="cart-item-@item.Id">
+                          
+                    <form asp-controller="WishList" asp-action="RemoveFromWishList" method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="remove" title="Remove this item">
+                            <i class="lni lni-close"></i>
+                        </button>
+                    </form>
+                  
+                     
+                    <div class="cart-img-head">
+                        <a class="cart-img" asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                            <img src="@item.Product.Images.FirstOrDefault()?.ImageUrl" alt="@item.Product.Name">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h4>
+                            <a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId">
+                                @item.Product.Name
+                            </a>
+                        </h4>
+                        <p><span class="amount">EGP @item.Product.Price</span></p>
+                    </div>
+
+                    @* <form asp-controller="CartItem" asp-action="AddToCart" method="post">
+                        <input type="hidden" name="productId" value="@item.Product.Id" />
+                        <input type="hidden" name="quantity" value="1" />
+                        <button type="submit" class="add-to-cart-btn" title="Add to Cart">
+                            <i class="lni lni-cart"></i>
+                        </button>
+                    </form> *@
+                </li>
+            }
+        </ul>
+
+        <div class="bottom"></div>
+    </div>
+    <!--/ End Shopping Item -->
+</div>
+  

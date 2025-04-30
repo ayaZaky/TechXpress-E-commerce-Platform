@@ -1,0 +1,297 @@
+﻿<div class="breadcrumbs">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">checkout</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-nav">
+                    <li><a asp-controller="Home" asp-action="Index"><i class="lni lni-home"></i> Home</a></li>   
+                    <li>checkout</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@model TechXpress.Data.DTOs.CheckoutViewModel
+@using Microsoft.Extensions.Options
+@inject IOptions<TechXpress_E_commerce_Platform.Models.StripeSettings> Stripe
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<section class="checkout-wrapper section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="checkout-steps-form-style-1">
+                    <ul id="accordionExample">
+                        <li>
+                            <h6 class="title" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Your Personal Details</h6>
+                            <section class="checkout-steps-form-content collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <form id="billingAddressForm" method="post">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="single-form form-default">
+                                                <label>User Name</label>
+                                                <div class="row">
+                                                    <div class="col-md-6 form-input form">
+                                                        <input type="text" name="FirstName" placeholder="First Name" value="@Model.Order.Name.Split(' ')[0]" required>
+                                                    </div>
+                                                    <div class="col-md-6 form-input form">
+                                                        <input type="text" name="LastName" placeholder="Last Name" value="@Model.Order.Name.Split(' ')[1]" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>Email Address</label>
+                                                <div class="form-input form">
+                                                    <input type="email" name="Email" placeholder="Email Address" value="@Model.Order.User.Email" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>Phone Number</label>
+                                                <div class="form-input form">
+                                                    <input type="tel" name="PhoneNumber" placeholder="Phone Number" value="@Model.Order.PhoneNumber" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form form-default">
+                                                <label>Mailing Address</label>
+                                                <div class="form-input form">
+                                                    <input type="text" name="Street" placeholder="Mailing Address" value="@Model.Order.StreetAddress" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>City</label>
+                                                <div class="form-input form">
+                                                    <input type="text" name="City" placeholder="City" value="@Model.Order.City" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>Post Code</label>
+                                                <div class="form-input form">
+                                                    <input type="text" name="PostalCode" placeholder="Post Code" value="@Model.Order.PostalCode" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>Country</label>
+                                                <div class="form-input form">
+                                                    <input type="text" name="Country" placeholder="Country" value="Egypt" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-form form-default">
+                                                <label>Region/State</label>
+                                                <div class="form-input form">
+                                                    <input type="text" name="State" placeholder="State" value="@Model.Order.State" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-checkbox checkbox-style-3">
+                                                <input type="checkbox" id="sameAddress">
+                                                <label for="sameAddress"><span></span></label>
+                                                <p>My delivery and mailing addresses are the same.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="single-form button">
+                                                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                                    Next Step
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </section>
+                        </li>
+                        <li>
+                            <h6 class="title collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Shipping Address</h6>
+                            <section class="checkout-steps-form-content collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <form id="shippingAddressForm" asp-action="PaymentProcess" asp-controller="Checkout" method="post">
+                                    <div class="row">
+                                        <div id="shippingAddressFields" class="row"></div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-payment-option">
+                                                <h6 class="heading-6 font-weight-400 payment-title">Select Delivery Option</h6>
+                                                <div class="payment-option-wrapper">
+                                                    <div class="single-payment-option">
+                                                        <input type="radio" name="shippingMethod" value="standard" checked id="shipping-1" data-price="@Model.ShippingCost">
+                                                        <label for="shipping-1">
+                                                            <img src="~/images/payment/shipping-1.png" alt="Sipping">
+                                                             
+                                                            <span class="price">$@Model.ShippingCost.ToString("F2")</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-payment-option">
+                                                        <input type="radio" name="shippingMethod" value="express" id="shipping-2" data-price="20.00">
+                                                        <label for="shipping-2">
+                                                            <img src="~/images/payment/shipping-2.png" alt="Sipping">
+                                                          
+                                                            <span class="price">$20.00</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-payment-option">
+                                                        <input type="radio" name="shippingMethod" value="express" id="shipping-2" data-price="20.00">
+                                                        <label for="shipping-2">
+                                                            <img src="~/images/payment/shipping-3.png" alt="Sipping">
+                                                          
+                                                            <span class="price">$25.00</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="single-payment-option">
+                                                        <input type="radio" name="shippingMethod" value="express" id="shipping-2" data-price="20.00">
+                                                        <label for="shipping-2">
+                                                            <img src="~/images/payment/shipping-4.png" alt="Sipping">
+                                                           
+                                                            <span class="price">$30.00</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="steps-form-btn button">
+                                                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseThree">Previous</button>
+                                                <button type="submit" class="btn btn-alt" onclick="window.location.href='/Stripe/CheckoutSession';">
+                                                    Continue to Payment
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="checkout-sidebar">
+                    <div class="checkout-sidebar-price-table mt-30">
+                        <h5 class="title">Order Summary</h5>
+                        <div class="sub-total-price">
+                            <div class="total-price">
+                                <p class="value">Subtotal:</p>
+                                <p class="price">$@Model.SubTotal.ToString("F2")</p>
+                            </div>
+                            <div class="total-price shipping">
+                                <p class="value">Shipping:</p>
+                                <p class="price" id="shipping-cost">$@Model.ShippingCost.ToString("F2")</p>
+                            </div>
+                        </div>
+                        <div class="total-payable">
+                            <div class="payable-price">
+                                <p class="value">Total:</p>
+                                <p class="price" id="total-price">$@Model.Order.OrderTotal.ToString("F2")</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sameAddressCheckbox = document.getElementById('sameAddress');
+        const billingForm = document.getElementById('billingAddressForm');
+        const shippingForm = document.getElementById('shippingAddressForm');
+        const shippingAddressFields = document.getElementById('shippingAddressFields');
+        const shippingRadios = document.querySelectorAll('input[name="shippingMethod"]');
+        const shippingCostElement = document.getElementById('shipping-cost');
+        const totalPriceElement = document.getElementById('total-price');
+
+        // Function to copy billing address values to shipping address fields
+        function copyBillingToShipping() {
+            const fieldsToCopy = ['FirstName', 'LastName', 'Email', 'PhoneNumber', 'Street', 'City', 'PostalCode', 'Country', 'State'];
+            let shippingHTML = '';
+
+            fieldsToCopy.forEach(name => {
+                const input = billingForm.querySelector(`[name="${name}"]`);
+                if (input) {
+                    shippingHTML += `
+                        <div class="col-md-6">
+                            <div class="single-form form-default">
+                                <label>${input.previousElementSibling ? input.previousElementSibling.textContent : name}</label>
+                                <div class="form-input form">
+                                    <input type="text" name="Shipping_${name}" value="${input.value}" readonly>
+                                </div>
+                            </div>
+                        </div>`;
+                }
+            });
+
+            shippingAddressFields.innerHTML = shippingHTML;
+        }
+
+        // Function to generate empty shipping form fields
+        function createEmptyShippingForm() {
+            const fieldsToCreate = ['FirstName', 'LastName', 'Email', 'PhoneNumber', 'Street', 'City', 'PostalCode', 'Country', 'State'];
+            let emptyFormHtml = '';
+
+            fieldsToCreate.forEach(name => {
+                emptyFormHtml += `
+                    <div class="col-md-6">
+                        <div class="single-form form-default">
+                            <label>${name}</label>
+                            <div class="form-input form">
+                                <input type="text" name="Shipping_${name}" value="">
+                            </div>
+                        </div>
+                    </div>`;
+            });
+
+            shippingAddressFields.innerHTML = emptyFormHtml;
+        }
+
+        // Checkbox logic
+        sameAddressCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                copyBillingToShipping();
+            } else {
+                createEmptyShippingForm();
+            }
+        });
+
+        // Initialize with empty form if checkbox not checked
+        if (!sameAddressCheckbox.checked) {
+            createEmptyShippingForm();
+        }
+
+        // Update total price when shipping method changes
+        function updateTotal() {
+            const selectedShipping = document.querySelector('input[name="shippingMethod"]:checked');
+            const shippingCost = parseFloat(selectedShipping.dataset.price);
+            const subtotal = parseFloat(@Model.SubTotal);
+            const total = subtotal + shippingCost;
+
+            shippingCostElement.textContent = `$${shippingCost.toFixed(2)}`;
+            totalPriceElement.textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Run on load and on change
+        updateTotal();
+        shippingRadios.forEach(radio => {
+            radio.addEventListener('change', updateTotal);
+        });
+    });
+</script>
+
+ 

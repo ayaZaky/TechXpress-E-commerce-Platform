@@ -1,0 +1,161 @@
+﻿@model IEnumerable<TechXpress.Data.Entities.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutDashboard.cshtml";
+}
+
+<div class="container-fluid">
+    <h2 class="mb-4">Users</h2>
+    <table id="usersTable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.FirstName @user.LastName</td>
+                        <td>@user.Email</td>
+                        <td>
+                            <span class="badge @((user.IsBlocked ? "bg-danger" : "bg-success"))">
+                                @if (user.IsBlocked)
+                                {
+                                    <span>Blocked</span>
+                                }
+                                else
+                                {
+                                    <span>Active</span>
+                                }
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm @((user.IsBlocked ? "btn-danger" : "btn-success")) toggle-block"
+                                    data-user-id="@user.Id"
+                                    data-is-blocked="@user.IsBlocked">
+                                @if (user.IsBlocked)
+                                {
+                                    <span>Unblock</span>
+                                }
+                                else
+                                {
+                                    <span>Block</span>
+                                }
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No Users Found</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.toggle-block').forEach(button => {
+                button.addEventListener('click', function () {
+                    var userId = this.dataset.userId;
+                    var isBlocked = this.dataset.isBlocked === 'true'; // تحويل القيمة من String لـ Boolean
+
+                    // التحقق من صحة الـ userId
+                    if (!userId || isNaN(userId)) {
+                        alert('Invalid User ID');
+                        return;
+                    }
+
+                    // إرسال الطلب للـ Controller لتحديث الحالة
+                                    fetch(`/Admin/Users/ToggleBlock`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+            },
+            body: JSON.stringify({
+                userId: userId,  // التأكد من إرسال ID صحيح
+                isBlocked: !isBlocked
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            // التأكد من أن البيانات المستلمة تحتوي على success
+            if (data && data.success) {
+                // تحديث الواجهة بناءً على النتيجة
+                button.dataset.isBlocked = !isBlocked;
+                button.classList.toggle('btn-danger');
+                button.classList.toggle('btn-success');
+                button.querySelector('span').innerText = isBlocked ? 'Block' : 'Unblock';
+
+                var statusBadge = button.closest('tr').querySelector('.badge');
+                statusBadge.classList.toggle('bg-danger', !isBlocked);
+                statusBadge.classList.toggle('bg-success', isBlocked);
+                statusBadge.querySelector('span').innerText = isBlocked ? 'Blocked' : 'Active';
+            } else {
+                // في حالة الخطأ
+                alert('Error occurred: ' + (data.message || 'An unknown error occurred.'));
+            }
+        })
+        .catch(error => {
+            // في حالة وجود أي خطأ أثناء إرسال الطلب
+            console.error('Error:', error);
+            alert('An unexpected error occurred. Please try again later.');
+        });
+         fetch(`/Admin/Users/ToggleBlock`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() // حماية CSRF
+                    },
+                    body: JSON.stringify({
+                        userId: userId,  // تأكد من أن هذا الـ userId هو String كما هو في قاعدة البيانات
+                        isBlocked: !isBlocked
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // تحديث الواجهة بناءً على النتيجة
+                        button.dataset.isBlocked = !isBlocked;
+                        button.classList.toggle('btn-danger');
+                        button.classList.toggle('btn-success');
+                        button.querySelector('span').innerText = isBlocked ? 'Block' : 'Unblock';
+
+                        var statusBadge = button.closest('tr').querySelector('.badge');
+                        statusBadge.classList.toggle('bg-danger', !isBlocked);
+                        statusBadge.classList.toggle('bg-success', isBlocked);
+                        statusBadge.querySelector('span').innerText = isBlocked ? 'Blocked' : 'Active';
+                    } else {
+                       
+                        alert('Error occurred: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An unexpected error occurred. Please try again later.');
+                });
+
+                // سجل الـ userId في الكونسول
+                console.log('User ID being sent:', userId);
+
+
+                });
+            });
+        });
+
+    </script>
+}

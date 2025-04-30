@@ -1,0 +1,35 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Order Confirmed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container d-flex justify-content-center align-items-center mt-5 mb-5">
+    <div class="card shadow-lg p-5 rounded-4 text-center" style="max-width: 600px; width: 100%;">
+        <!-- Icon -->
+        <div class="mb-4">
+            <i class="bi bi-bag-check-fill text-primary" style="font-size: 5rem;"></i>
+        </div>
+
+        <!-- Title -->
+        <h2 class="fw-bold mb-3 text-dark">Thank you for your order!</h2>
+        <p class="text-muted lead">Your order has been placed successfully. We're getting it ready for you.</p>
+
+        <!-- Order Info -->
+        <div class="bg-light p-3 rounded-3 my-4">
+            <h5 class="mb-2 text-dark">Order Number: <span class="text-primary">#@Model</span></h5>
+            <p class="mb-0">Expected Shipping Date:</p>
+            <p class="fw-semibold">@DateTime.Now.AddDays(7).ToString("dddd, dd MMMM yyyy")</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a href="@Url.Action("Profile", "Account")#ordersSection" class="btn btn-outline-primary px-4">
+                <i class="bi bi-receipt"></i> View Order
+            </a>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-primary px-4">
+                <i class="bi bi-shop"></i> Continue Shopping
+            </a>
+        </div>
+    </div>
+</div>

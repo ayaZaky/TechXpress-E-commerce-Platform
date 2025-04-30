@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Shopping Cart with enhanced styling -->
+    <g transform="translate(10, 20) scale(1.5)">
+      <!-- Cart Body -->
+      <path d="M2 3H4.5L9 17M9 17H19L22 7H6M9 17L6 7M6 7H21" 
+            stroke="#0167F3" 
+            stroke-width="2.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            filter="drop-shadow(0 2px 2px rgba(1,103,243,0.2))"/>
+      
+      <!-- Wheels with better detail -->
+      <circle cx="10" cy="21" r="2.5" 
+              stroke="#0167F3" 
+              stroke-width="2"
+              fill="white"/>
+      <circle cx="18" cy="21" r="2.5" 
+              stroke="#0167F3" 
+              stroke-width="2"
+              fill="white"/>
+      
+      <!-- Enhanced Lightning Bolt -->
+      <path d="M19 1L14 7H19L14 13" 
+            stroke="#0167F3" 
+            stroke-width="2.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            filter="drop-shadow(0 1px 1px rgba(1,103,243,0.3))"/>
+    </g>
+    
+    <!-- Enhanced Text with better typography and effects -->
+    <text x="80" y="45" 
+          font-family="Arial, sans-serif" 
+          font-size="36" 
+          font-weight="bold" 
+          fill="#0167F3"
+          filter="drop-shadow(0 2px 2px rgba(1,103,243,0.1))">TechXpress</text>
+  </g>
+  
+  <!-- Subtle background element -->
+  <path d="M75 40 L270 40" 
+        stroke="#0167F3" 
+        stroke-width="0.5" 
+        stroke-opacity="0.1"
+        stroke-dasharray="2 4"/>
+</svg>
